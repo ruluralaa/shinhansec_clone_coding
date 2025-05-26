@@ -19,33 +19,53 @@ body {
 /* 상단 바 스타일 */
 .top-bar {
   background-color: #f5f5f5;
-  height: 48px;
+  height: 40px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.wave-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/wave.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 1;
 }
 
 .top-bar .container {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 20px;
 }
 
 .logo img {
-  height: 36px;
+  height: 42px;
   width: auto;
   object-fit: contain;
 }
 
 .top-menu {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .top-menu a {
   text-decoration: none;
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .top-menu a:hover {
@@ -61,11 +81,19 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.main-menu-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
 .main-menu {
   display: flex;
   justify-content: center;
   gap: 40px;
-  width: 100%;
+  flex: 1;
 }
 
 .main-menu a {
@@ -312,4 +340,39 @@ body {
 
 .top-button:hover {
   background-color: #0033CC;
+}
+
+.nav-buttons {
+  display: flex;
+  background-color: #009cde;
+  height: 48px;
+  margin-left: 20px;
+}
+
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s ease;
+  padding: 0;
+}
+
+.icon-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.icon-btn:hover {
+  filter: brightness(1.05);
+}
+
+.icon-btn:hover img {
+  filter: brightness(0) invert(1) brightness(1.05);
 }
