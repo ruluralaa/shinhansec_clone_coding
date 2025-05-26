@@ -1,0 +1,245 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 메인 타이틀 */
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+/* 랭킹 헤더 섹션 */
+.ranking-header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-section {
+    margin-bottom: 30px;
+}
+
+.best-title {
+    color: #0046FF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 메뉴 디테일 */
+.menu-detail {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+/* 메뉴 아이콘 */
+.menu-icons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.menu-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.menu-item span {
+    font-size: 14px;
+    color: #333;
+}
+
+.menu-item.active span,
+.menu-item:hover span {
+    color: #0046FF;
+}
+
+.menu-item.active img {
+    filter: invert(23%) sepia(90%) saturate(6977%) hue-rotate(225deg) brightness(97%) contrast(108%);
+}
+
+.menu-item:hover img {
+    filter: invert(23%) sepia(90%) saturate(6977%) hue-rotate(225deg) brightness(97%) contrast(108%);
+}
+
+/* 기간 선택 버튼 */
+.period-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.period-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.period-btn.active {
+    background-color: #0046FF;
+    color: white;
+    border-color: #0046FF;
+}
+
+/* 랭킹 컨테이너 */
+.ranking-container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.ranking-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+    /* background: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+}
+
+.rank {
+    /* font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0046FF; */
+}
+
+.fund-name {
+    /* font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    height: 44px;
+    overflow: hidden; */
+}
+
+.yield {
+    /* margin: 15px 0; */
+}
+
+.yield-label {
+    /* font-size: 14px;
+    color: #666;
+    margin-right: 10px; */
+}
+
+.yield-value {
+    /* font-size: 24px;
+    font-weight: bold;
+    color: #0046FF; */
+}
+
+.tags {
+    /* display: flex;
+    gap: 8px;
+    margin: 15px 0; */
+}
+
+.tag {
+    /* padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #666; */
+}
+
+.detail-btn {
+    /* width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; */
+}
+
+.detail-btn:hover {
+    /* background-color: #0046FF;
+    color: white;
+    border-color: #0046FF;*/
+} 
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    /* .ranking-container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+}
+
+@media (max-width: 768px) {
+    /* .ranking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    } */
+}
+
+@media (max-width: 480px) {
+    /* .container {
+        padding: 10px;
+    }
+
+    .menu-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .period-selector {
+        flex-wrap: wrap;
+    }
+
+    .period-btn {
+        flex: 1;
+        min-width: 45%;
+    } */
+} 
