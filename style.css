@@ -8,8 +8,15 @@
 body {
   background-color: #fff;
 }
-
-/* 헤더 공통 스타일 */
+header {
+  background: none;
+  /* background: url('./assets/bg_top.gif') repeat-x top center;
+     background-size: auto 100%; */
+  /* min-height: 160px; */
+  /* padding-bottom: 24px; */
+  position: relative;
+  z-index: 0;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -117,6 +124,7 @@ body {
 }
 
 .header-icons {
+
   display: flex;
   gap: 20px;
   font-size: 20px;
@@ -375,4 +383,421 @@ body {
 
 .icon-btn:hover img {
   filter: brightness(0) invert(1) brightness(1.05);
+}
+
+/* 펀드 상세 본문 */
+.fund-detail-main {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* [1] 상단 정보 카드 */
+.fund-info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 32px;
+  justify-content: flex-start;
+}
+.fund-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  min-width: 140px;
+  flex: 1 1 140px;
+  padding: 18px 20px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.card-label {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 8px;
+}
+.card-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+.fund-yield {
+  color: #e23a3a;
+  font-weight: 700;
+}
+
+/* [2] 펀드 정보 탭 */
+.fund-tabs {
+  margin-bottom: 32px;
+}
+.fund-tabs input[type="radio"] {
+  display: none;
+}
+.fund-tabs label {
+  display: inline-block;
+  padding: 10px 28px;
+  margin-right: 2px;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.fund-tabs input[type="radio"]:checked + label {
+  background: #fff;
+  color: #009cde;
+  border-bottom: 2px solid #009cde;
+  z-index: 2;
+  position: relative;
+}
+.fund-tabs .tab-content {
+  display: none;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 28px 24px;
+  margin-top: -1px;
+}
+#tab1:checked ~ .tab1-content,
+#tab2:checked ~ .tab2-content,
+#tab3:checked ~ .tab3-content {
+  display: block;
+}
+
+/* [3] 데이터 표 */
+.fund-table-section {
+  margin-top: 32px;
+}
+.fund-data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fafbfc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.fund-data-table th,
+.fund-data-table td {
+  padding: 14px 18px;
+  font-size: 15px;
+  text-align: left;
+}
+.fund-data-table th {
+  background: #f0f2f5;
+  color: #666;
+  font-weight: 500;
+  width: 180px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.fund-data-table td {
+  background: #fff;
+  color: #222;
+  border-bottom: 1px solid #e5e5e5;
+}
+.fund-data-table tr:last-child th,
+.fund-data-table tr:last-child td {
+  border-bottom: none;
+}
+.fund-data-table input[type="checkbox"][checked][disabled] {
+  accent-color: #0058A3;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+  cursor: not-allowed;
+}
+
+/* 펀드 상세 상단 요약 정보 */
+.fund-summary {
+  margin-bottom: 36px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 32px 28px 32px;
+}
+.fund-summary-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 160px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.fund-summary-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 160px;
+}
+.fund-yield-label {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.fund-yield-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e23a3a;
+  margin-bottom: 8px;
+}
+.fund-yield-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.fund-yield-tabs span {
+  font-size: 13px;
+  color: #888;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 2px 12px;
+  cursor: pointer;
+}
+.fund-yield-tabs .active {
+  background: #122072;
+  color: #fff;
+  font-weight: 500;
+}
+.fund-yield-graph {
+  width: 100%;
+  height: 240px;
+  padding-bottom: 20px;
+  background: #f0f2f7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.fund-summary-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fund-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.fund-tag {
+  background: #f5f7fa;
+  color: #122072;
+  border: 1px solid #dbe2ef;
+  border-radius: 12px;
+  padding: 3px 14px 3px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+.fund-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #122072;
+  margin-bottom: 10px;
+}
+.fund-class {
+  font-size: 15px;
+  color: #888;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.fund-code {
+  font-size: 13px;
+  color: #bbb;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.fund-base-info {
+  display: flex;
+  gap: 28px;
+}
+.fund-base-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.base-label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+.base-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #122072;
+}
+
+.fund-summary-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 160px;
+}
+.fund-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.star {
+  font-size: 20px;
+  color: #e0e4ef;
+  margin-right: 2px;
+}
+.star.filled {
+  color: #ffc700;
+}
+.rating-score {
+  font-size: 15px;
+  color: #888;
+  margin-left: 6px;
+  font-weight: 500;
+}
+.fund-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.info-label {
+  color: #888;
+}
+.info-value {
+  color: #122072;
+  font-weight: 600;
+}
+
+.fund-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin: 40px 0 28px 0;
+  letter-spacing: -1px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.tab1-content {
+  text-align: left;
+}
+.info-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.info-icon {
+  width: 72px;
+  height: 72px;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 20px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  display: block;
+}
+.info-text {
+  flex: 1;
+  text-align: left;
+}
+.info-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+.info-text p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.fund-stats-section {
+  background: #fff;
+  margin: 40px 0 0 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.fund-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+}
+.fund-stats-title-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.stats-icon-bg {
+  width: 40px;
+  height: 40px;
+  background: #009cde;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+}
+.stats-icon-bg img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.stats-title {
+  color: #009cde;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.stats-desc {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.fund-stats-cell {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stats-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #122072;
+  margin-top: 6px;
+}
+
+.top-wave-bg {
+  width: 100%;
+  height: 150px;
+  background-image: url('./assets/bg_top.gif');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
