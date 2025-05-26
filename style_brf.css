@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #f7f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-width: 59.375rem; /* 950px → 59.375rem */
+}
+
+.container {
+  max-width: 59.375rem; /* 950px → 59.375rem */
+  min-width: 59.375rem;
+  margin: 0 auto;
+  padding: 0 0;
+  background: transparent;
+}
+
+
+/* 상단 네비게이션 */
+.header {
+  background: #fff;
+  border-bottom: 0.0625rem solid #e5e8eb;
+}
+.top-bar {
+  background: #003478;
+  color: #fff;
+  font-size: 0.875rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+.logo img {
+  height: 2.5rem;
+}
+.top-menu {
+  display: flex;
+  gap: 1.125rem;
+}
+.top-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.top-menu a:hover {
+  color: #ffd600;
+}
+
+.main-menu-bar {
+  background: #fff;
+  border-bottom: 0.0625rem solid #e5e8eb;
+}
+.main-menu-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+}
+.main-menu {
+  display: flex;
+  gap: 2rem;
+}
+.main-menu a {
+  color: #003478;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  transition: color 0.2s;
+}
+.main-menu a:hover {
+  color: #0056b3;
+}
+.nav-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.375rem;
+}
+.icon-btn img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* 메인 타이틀 & 탭 */
+.main-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1.125rem 0;
+  color: #003478;
+  letter-spacing: -0.0625rem;
+}
+.tab-menu {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.875rem;
+}
+.tab {
+  background: #f2f4f8;
+  border: none;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 0.625rem 1.75rem;
+  font-size: 1rem;
+  color: #003478;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tab.active {
+  background: #fff;
+  color: #0056b3;
+  border-bottom: 0.125rem solid #0056b3;
+}
+
+/* 펀드 테이블 */
+.fund-table-wrap {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.06);
+  padding: 1.125rem 0 0.5rem 0;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+.fund-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.fund-table thead {
+  background: #f5f6f8;
+}
+.fund-table .thead-row1 th {
+  background: #f5f6f8;
+  border: 0.0625rem solid #d1d6dd;
+  border-bottom: none;
+  color: #222;
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  height: 3rem;
+}
+.fund-table .thead-row2 th {
+  background: #f5f6f8;
+  border: 0.0625rem solid #d1d6dd;
+  border-top: none;
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  height: 2.5rem;
+  position: relative;
+}
+.th-select { width: 4%; min-width: 2.5rem; }
+.th-name { width: 32%; min-width: 16rem; }
+.th-rate { min-width: 24%; width: 24%; }
+.th-grade { width: 14%; min-width: 7rem; }
+.th-order { width: 14%; min-width: 7rem; }
+.th-period {
+  background: #f5f6f8;
+  border-right: 0.0625rem solid #d1d6dd;
+  border-left: 0.0625rem solid #d1d6dd;
+  font-weight: 400;
+  position: relative;
+}
+.th-period:last-child {
+  border-right: 0.0625rem solid #d1d6dd;
+}
+.th-period-active {
+  background: #eaf3fa;
+  border: 0.125rem solid #1a9bd7;
+  border-bottom: none;
+  z-index: 1;
+  font-weight: 700;
+}
+.icon-dropdown {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  vertical-align: middle;
+  margin-left: 0.125rem;
+  background: url('data:image/svg+xml;utf8,<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5l4 4 4-4" stroke="%23666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center/contain;
+}
+.fund-table th, .fund-table td {
+  padding: 0.625rem 0.75rem;
+  text-align: center;
+  border-bottom: 0.0625rem solid #e5e8eb;
+}
+.fund-table th {
+  color: #003478;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.fund-table .fund-name {
+  text-align: left;
+  color: #0056b3;
+  font-weight: 500;
+  white-space: normal;
+  overflow: visible;
+}
+.fund-table .highlight {
+  color: #e94e77;
+  font-weight: 700;
+}
+.star {
+  color: #ffd600;
+  font-size: 1.1rem;
+  letter-spacing: 0.0625rem;
+}
+.compare-btn {
+  background: #003478;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.3125rem 1rem;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.compare-btn:hover {
+  background: #0056b3;
+}
+
+/* 안내문구 */
+.notice-box {
+  background: #f2f4f8;
+  border-radius: 0.5rem;
+  padding: 1rem 1.375rem;
+  color: #e94e77;
+  font-size: 0.98rem;
+  margin-bottom: 2.5rem;
+}
+.notice-box ul {
+  margin: 0;
+  padding-left: 1.125rem;
+}
+.notice-box li {
+  margin-bottom: 0.25rem;
+}
+
+/* 푸터 */
+.footer {
+  background: #003478;
+  color: #fff;
+  padding: 2rem 0 1.125rem 0;
+  margin-top: 3.75rem;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+}
+.footer-logo img {
+  height: 1.875rem;
+}
+.footer-links {
+  display: flex;
+  gap: 1.125rem;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #ffd600;
+}
+.footer-contact {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.footer-copy {
+  font-size: 0.95rem;
+  color: #b0c4de;
+}
+
+/* 반응형 (기본 PC, 필요시 모바일 추가) */
+@media (max-width: 56.25rem) { /* 900px */
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .main-menu {
+    gap: 0.875rem;
+    font-size: 0.9375rem;
+  }
+  .tab-menu {
+    gap: 0.125rem;
+  }
+}
+
+.fund-top-bar {
+  margin-top: 36px;
+  margin-bottom: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.fund-top-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.blue-bar {
+  display: inline-block;
+  width: 6px;
+  height: 26px;
+  background: #0056b3;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.title-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.fund-top-tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.fund-tab {
+  min-width: 180px;
+  padding: 18px 0 14px 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+  background: #fff;
+  border: 1px solid #1a237e;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  transition: color 0.2s, border 0.2s, background 0.2s;
+  margin-right: -1px;
+}
+.fund-tab.active {
+  color: #1a237e;
+  background: #fff;
+  border-bottom: 2px solid #fff;
+  z-index: 2;
+}
+.fund-tab:not(.active) {
+  color: #666;
+  background: #fafbfc;
+}
+.fund-top-actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.action-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.08rem;
+  cursor: pointer;
+  padding: 0 8px;
+  color: #222;
+}
+.action-btn .action-text.blue {
+  color: #1a9bd7;
+  font-weight: 500;
+}
+.action-btn .action-text {
+  font-weight: 500;
+  margin-left: 2px;
+}
+.icon-list {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="8" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="12" width="8" height="2" rx="1" fill="%231a9bd7"/></svg>') no-repeat center/contain;
+}
+.icon-card {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="14" height="8" rx="2" fill="%23333" stroke="%23333" stroke-width="1.5"/><rect x="4.5" y="9" width="3" height="1.5" rx="0.75" fill="%23fff"/></svg>') no-repeat center/contain;
+  margin-right: 2px;
+}
+.fund-top-underline {
+  width: 100%;
+  height: 3px;
+  background: #1a237e;
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.fund-util-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0 10px 0;
+  gap: 10px;
+}
+.fund-util-left {
+  display: flex;
+  gap: 10px;
+}
+.util-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border: 1px solid #bfc8d6;
+  background: #fff;
+  color: #1a9bd7;
+  border-radius: 4px;
+  padding: 7px 18px 7px 12px;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.util-btn.buy-btn {
+  color: #1a9bd7;
+  border: 1.5px solid #1a9bd7;
+  background: #fff;
+}
+.util-btn.buy-btn:hover {
+  background: #eaf6fb;
+}
+.util-btn.compare-btn2 {
+  color: #222;
+  border: 1.5px solid #bfc8d6;
+  background: #fff;
+  margin-left: 2px;
+}
+.util-btn.compare-btn2:hover {
+  background: #f5f7fa;
+}
+.icon-cart {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 6h11l-1.2 6.4a2 2 0 0 1-2 1.6H8.7a2 2 0 0 1-2-1.6L5.5 6z" stroke="%231a9bd7" stroke-width="1.5" fill="none"/><circle cx="8.5" cy="16" r="1" fill="%231a9bd7"/><circle cx="14.5" cy="16" r="1" fill="%231a9bd7"/></svg>') no-repeat center/contain;
+}
+.icon-compare {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10h10M7 8l-2 2 2 2" stroke="%23333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center/contain;
+}
+.fund-util-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.05rem;
+}
+.util-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #222;
+  border: 1.5px solid #bfc8d6;
+  border-radius: 4px;
+  padding: 2px 8px 2px 2px;
+  background: #fff;
+}
+.util-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #1a9bd7;
+  margin-right: 2px;
+}
+.util-date {
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 500;
+}
+.util-date b {
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.util-count {
+  font-size: 1.08rem;
+  color: #222;
+  margin-left: 2px;
+}
+.util-count b {
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+
+.floating-bar-exact {
+  position: fixed;
+  top: 19.8125rem; /* 317px → 19.8125rem */
+  left: 50%;
+  width: 6rem; /* 96px → 6rem */
+  margin-left: 32.5rem; /* 520px → 32.5rem */
+  padding: 0.3125rem; /* 5px → 0.3125rem */
+  box-sizing: border-box;
+  height: 14.5rem; /* 232px → 14.5rem */
+  background: #fafbfc;
+  z-index: 1000;
+  pointer-events: none;
+}
+.floating-bar-inner {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-radius: 3rem 3rem 3.75rem 3.75rem / 3rem 3rem 6.25rem 6.25rem;
+  box-shadow: 0 0.125rem 1rem rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  position: relative;
+}
+.floating-circle-exact {
+  width: 5.375rem; /* 86px → 5.375rem */
+  height: 5.375rem;
+  background: #16a8e3;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.10);
+  position: relative;
+}
+.floating-headset-icon {
+  display: block;
+  width: 1.25rem; /* 20px → 1.25rem */
+  height: 1.25rem;
+  margin-bottom: 0.3125rem;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 11v-1c0-4.42 3.58-8 8-8s8 3.58 8 8v1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><rect x="3.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><rect x="13.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><path d="M6.5 16v1a2 2 0 0 0 2 2h1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><path d="M16.5 16v1a2 2 0 0 1-2 2h-1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/></svg>') no-repeat center/contain;
+}
+.floating-title-exact {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: -0.0625rem;
+}
+.floating-menu-exact {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.floating-menu-item-exact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  color: #666;
+  font-size: 0.98rem;
+  font-weight: 400;
+  padding: 0;
+}
+.floating-menu-icon-exact {
+  width: 1.125rem; /* 18px */
+  height: 1.125rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.floating-menu-icon-exact.clock {
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7.5" stroke="%23666" stroke-width="1.5" fill="none"/><path d="M9 3.5v5l3 3" stroke="%23666" stroke-width="1.5" stroke-linecap="round"/></svg>') no-repeat center/contain;
+}
+.floating-menu-icon-exact.heart {
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16s-6-3.73-6-8.25A4.25 4.25 0 0 1 9 3.5a4.25 4.25 0 0 1 6 4.25C15 12.27 9 16 9 16Z" stroke="%23666" stroke-width="1.5" fill="none"/></svg>') no-repeat center/contain;
+}
+.floating-menu-label {
+  color: #666;
+  font-size: 0.98rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  letter-spacing: -0.0625rem;
+}
+.floating-tail-exact {
+  width: 0.875rem; /* 14px */
+  height: 0.875rem;
+  background: #e6e6ee;
+  border-radius: 50%;
+  margin: 0.5rem auto 0 auto;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.08);
+  position: relative;
+  left: 0.25rem;
+  opacity: 0.5;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.1em 0.6em;
+  border-radius: 0.375rem;
+  margin-right: 0.2em;
+  margin-bottom: 0.15em;
+  border: 0.0625rem solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+.badge.danger {
+  color: #d32f2f;
+  border-color: #f8d7da;
+  background: #fbe9e7;
+}
+.badge.high {
+  color: #e57300;
+  border-color: #ffe0b2;
+  background: #fff8e1;
+}
+.badge.orange {
+  color: #ff9800;
+  border-color: #ffe0b2;
+  background: #fff8e1;
+}
+.badge.yellow {
+  color: #bfa100;
+  border-color: #fff9c4;
+  background: #fffde7;
+}
+.badge.blue {
+  color: #1976d2;
+  border-color: #bbdefb;
+  background: #e3f2fd;
+}
+.badge.purple {
+  color: #6a1b9a;
+  border-color: #ede7f6;
+  background: #f3e5f5;
+}
+.badge.pink {
+  color: #c2185b;
+  border-color: #f8bbd0;
+  background: #fce4ec;
+}
+.badge.overseas {
+  color: #00897b;
+  border-color: #b2dfdb;
+  background: #e0f2f1;
+}
+.badge.rec {
+  color: #1976d2;
+  border-color: #bbdefb;
+  background: #e3f2fd;
+  font-weight: 700;
+}
+
+.heart-btn {
+  width: 2rem;
+  height: 2rem;
+  border: 0.0625rem solid #d1d6dd;
+  border-radius: 50%;
+  background: #fff url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 17s-6-3.73-6-8.25A4.25 4.25 0 0 1 10 4.5a4.25 4.25 0 0 1 6 4.25C16 13.27 10 17 10 17Z" stroke="%23b0b0b0" stroke-width="1.5" fill="none"/></svg>') no-repeat center/1.2rem 1.2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: border 0.15s, background 0.15s;
+}
+.heart-btn:hover {
+  border-color: #1976d2;
+  background: #e3f2fd url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="%231976d2" xmlns="http://www.w3.org/2000/svg"><path d="M10 17s-6-3.73-6-8.25A4.25 4.25 0 0 1 10 4.5a4.25 4.25 0 0 1 6 4.25C16 13.27 10 17 10 17Z" stroke="%231976d2" stroke-width="1.5" fill="none"/></svg>') no-repeat center/1.2rem 1.2rem;
+}

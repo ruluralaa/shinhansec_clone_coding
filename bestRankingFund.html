@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>신한투자증권 | 베스트 랭킹 펀드</title>
+  <link rel="stylesheet" href="style_brf.css" />
+  <link rel="stylesheet" href="fund_bar_style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 상단 네비게이션 -->
+  <header class="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/logo.jpg" alt="신한투자증권 로고" height="40">
+        </div>
+        <nav class="top-menu">
+          <a href="#">로그인</a>
+          <a href="#">계좌개설</a>
+          <a href="#">ID 등록</a>
+          <a href="#">인증센터</a>
+          <a href="#">신한Premier</a>
+          <a href="#">퇴직연금</a>
+          <a href="#">GIB</a>
+          <a href="#">Tops Club</a>
+          <a href="#">소비자보호포털</a>
+          <a href="#">상품공시실</a>
+        </nav>
+      </div>
+    </div>
+    <div class="main-menu-bar">
+      <div class="container">
+        <nav class="main-menu">
+          <a href="#">나의 자산분석</a>
+          <a href="#">자산관리</a>
+          <a href="#">연금/ISA</a>
+          <a href="#">트레이딩</a>
+          <a href="#">투자정보</a>
+          <a href="#">뱅킹/공모주/연구</a>
+          <a href="#">고객센터</a>
+        </nav>
+        <div class="nav-icons">
+          <button class="icon-btn"><img src="./assets/icons/user.png" alt="로그인"></button>
+          <button class="icon-btn"><img src="./assets/icons/search.png" alt="검색"></button>
+          <button class="icon-btn"><img src="./assets/icons/hamburger.png" alt="전체메뉴"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 순영파트 시작 -->
+  <div class="container">
+    <h1 class="main-title">베스트 랭킹 펀드</h1>
+
+    <div class="ranking-header">
+      <div class="title-section">
+        <h2 class="best-title">Best Ranking</h2>
+        <h3 class="sub-title">수익률</h3>
+        <p class="description">수익률 기간을 선택해주세요.</p>
+        <div class="period-selector">
+          <button class="period-btn active">1개월</button>
+          <button class="period-btn">3개월</button>
+          <button class="period-btn">6개월</button>
+          <button class="period-btn">1년</button>
+        </div>
+      </div>
+      <div class="menu-detail">
+        <div class="menu-icons">
+          <div class="menu-item active">
+            <img src="./assets/icons/chart.png" alt="수익률" width="64" height="64">
+            <span>수익률</span>
+          </div>
+          <div class="menu-item">
+            <img src="./assets/icons/coin.png" alt="수익률" width="64" height="64">
+
+            <span>판매액</span>
+          </div>
+          <div class="menu-item">
+            <img src="./assets/icons/setting.png" alt="수익률" width="64" height="64">
+
+            <span>설정액</span>
+          </div>
+          <div class="menu-item">
+            <img src="./assets/icons/fund-user.png" alt="수익률" width="64" height="64">
+
+            <span>연령별</span>
+          </div>
+          <div class="menu-item">
+            <img src="./assets/icons/money.png" alt="수익률" width="64" height="64">
+
+            <span>보유펀드</span>
+          </div>
+          <div class="menu-item">
+            <img src="./assets/icons/flow.png" alt="수익률" width="64" height="64">
+
+            <span>운용사별</span>
+          </div>
+        </div>
+        <div class="ranking-container">
+          <div class="ranking-item">
+            <div class="rank">1</div>
+            <h4 class="fund-name">iM에셋월드골드증권자[주식재간접](H)(Ce)</h4>
+            <div class="yield-label">수익률</div>
+            <div class="yield-value">19.28%</div>
+            <div class="tags">
+              <span class="tag">대안투자</span>
+              <span class="tag">매우높은위험</span>
+            </div>
+            <button class="detail-btn">상세보기</button>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank">2</div>
+              <h4 class="fund-name">신한 골드증권1호[주식](C-e)</h4>
+
+              <span class="yield-label">수익률</span>
+              <span class="yield-value">14.91%</span>
+
+              <div class="tags">
+                <span class="tag">대안투자</span>
+                <span class="tag">높은위험</span>
+              </div>
+              <button class="detail-btn">상세보기</button>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank">3</div>
+              <h4 class="fund-name">신한글로벌탄소중립H[주식](C-e)</h4>
+              <span class="yield-label">수익률</span>
+              <span class="yield-value">12.39<span>%</span></span>
+              <div class="tags">
+                <span class="tag">해외주식</span>
+                <span class="tag">높은위험</span>
+              </div>
+              <button class="detail-btn">상세보기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- 순영파트 끝끝 -->
+  <!-- 메인 콘텐츠 -->
+  <main class="main-content">
+    <div class="container">
+      <div class="fund-top-bar">
+        <div class="fund-top-title">
+          <span class="blue-bar"></span>
+          <span class="title-text">기간별 수익률 상위 20개 펀드 상품</span>
+        </div>
+        <div class="fund-top-tabs">
+          <button class="fund-tab active" id="tab-earning">수익률</button>
+          <button class="fund-tab" id="tab-fee">수수료</button>
+        </div>
+        <div class="fund-top-actions">
+          <button class="action-btn" id="detail-btn">
+            <span class="icon-list"></span>
+            <span class="action-text blue">자세히보기</span>
+          </button>
+          <button class="action-btn" id="cardview-btn">
+            <span class="icon-card"></span>
+            <span class="action-text">카드뷰보기</span>
+          </button>
+        </div>
+        <div class="fund-top-underline"></div>
+      </div>
+      <script>
+        // 탭 클릭 활성화
+        document.addEventListener('DOMContentLoaded', function () {
+          const tabs = document.querySelectorAll('.fund-tab');
+          tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+              tabs.forEach(t => t.classList.remove('active'));
+              this.classList.add('active');
+            });
+          });
+          // 버튼 클릭시 효과(예시)
+          document.getElementById('detail-btn').onclick = function () {
+            alert('자세히보기 클릭!');
+          };
+          document.getElementById('cardview-btn').onclick = function () {
+            alert('카드뷰보기 클릭!');
+          };
+        });
+      </script>
+      <div class="fund-util-bar">
+        <div class="fund-util-left">
+          <button class="util-btn buy-btn"><span class="icon-cart"></span> 일괄매수</button>
+          <button class="util-btn compare-btn2"><span class="icon-compare"></span> 비교하기</button>
+        </div>
+        <div class="fund-util-right">
+          <label class="util-checkbox"><input type="checkbox" checked> <span>대표펀드 보기</span></label>
+          <label class="util-checkbox"><input type="checkbox" checked> <span>판매중지 제외</span></label>
+          <span class="util-date"><b>2025.05.23</b> 기준</span>
+          <span class="util-count">총 <b>20</b>건</span>
+        </div>
+      </div>
+      <div class="fund-table-wrap">
+        <table class="fund-table">
+          <thead>
+            <tr class="thead-row1">
+              <th rowspan="2" class="th-select">선택</th>
+              <th rowspan="2" class="th-name">펀드명</th>
+              <th colspan="4" class="th-rate">수익률(%)</th>
+              <th rowspan="2" class="th-grade">제로인등급<br>/설정액(억원)</th>
+              <th rowspan="2" class="th-order">주문</th>
+            </tr>
+            <tr class="thead-row2">
+              <th class="th-period">1개월 <span class="icon-dropdown"></span></th>
+              <th class="th-period th-period-active">3개월 <span class="icon-dropdown"></span></th>
+              <th class="th-period">6개월 <span class="icon-dropdown"></span></th>
+              <th class="th-period">1년 <span class="icon-dropdown"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                iM에셋월드골드증권자[주식재간접] (H) (Ce)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">0.66</td>
+              <td class="rate highlight">19.28</td>
+              <td class="rate">27.19</td>
+              <td class="rate">40.92</td>
+              <td>
+                <span class="star-rate">★★★★☆</span><br>69.69
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(10) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                신한 골드증권1호[주식] (C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">-1.41</td>
+              <td class="rate highlight">14.91</td>
+              <td class="rate">23.68</td>
+              <td class="rate">36.02</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>40.67
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(13) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                신한글로벌밸런스증권비[주식] (C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">20.11</td>
+              <td class="rate highlight">12.39</td>
+              <td class="rate">7.64</td>
+              <td class="rate">23.87</td>
+              <td>
+                <span class="star-rate">★★★★☆</span><br>12.82
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(8) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                DB차이나바이오헬스케어증권자(H)[주식](C-E)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">2.42</td>
+              <td class="rate highlight">11.94</td>
+              <td class="rate">18.44</td>
+              <td class="rate">7.56</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>3.08
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                트러스톤핀셋중소형증권자투자신탁[주식] (Ce)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">11.34</td>
+              <td class="rate highlight">11.89</td>
+              <td class="rate">33.81</td>
+              <td class="rate">20.15</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>10.35
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(5) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge low">다소높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge blue">온라인</span><br>
+                미래에셋골드특별자산자[금-재간접] (C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">-2.06</td>
+              <td class="rate highlight">10.50</td>
+              <td class="rate">19.90</td>
+              <td class="rate">36.71</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>418.58
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(9) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge pink">개인연금</span><br>
+                에셋플러스코리아리치투게더연금증권자1[주식] (Ce)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">5.41</td>
+              <td class="rate highlight">10.35</td>
+              <td class="rate">34.36</td>
+              <td class="rate">22.69</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>114.08
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                SH인디아(H)[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">1.16</td>
+              <td class="rate highlight">10.15</td>
+              <td class="rate">-0.28</td>
+              <td class="rate">2.92</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>37.94
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                VIP한국형가치투자[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">6.09</td>
+              <td class="rate highlight">9.64</td>
+              <td class="rate">23.85</td>
+              <td class="rate">16.19</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>308.96
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(8) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">국내주식</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                우리Best중소형증권자[주식](E)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">9.66</td>
+              <td class="rate highlight">9.60</td>
+              <td class="rate">18.69</td>
+              <td class="rate">0.21</td>
+              <td>
+                <span class="star-rate">★★★★☆</span><br>21.33
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                DB차이나바이오헬스케어증권자(UH)[주식](C-E)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">-0.60</td>
+              <td class="rate highlight">9.54</td>
+              <td class="rate">17.98</td>
+              <td class="rate">9.66</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>3.41
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">대안투자</span>
+                <span class="badge blue">온라인</span><br>
+                KB스타골드특별자산투자신탁[금-파생형](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">-1.99</td>
+              <td class="rate highlight">9.45</td>
+              <td class="rate">17.63</td>
+              <td class="rate">32.65</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>81.85
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                신한브라질(H)[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">1.70</td>
+              <td class="rate highlight">9.43</td>
+              <td class="rate">5.60</td>
+              <td class="rate">-2.31</td>
+              <td>
+                <span class="star-rate">★★★★☆</span><br>27.35
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                신한더드림브라질1호[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">1.67</td>
+              <td class="rate highlight">9.39</td>
+              <td class="rate">5.63</td>
+              <td class="rate">-2.40</td>
+              <td>
+                <span class="star-rate">★★★★★</span><br>7.35
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(1) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">국내주식</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">오프라인</span>
+                <span class="badge pink">개인연금</span><br>
+                KB연금가치주증권전환형자투자신탁[주식](C)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">8.29</td>
+              <td class="rate highlight">8.60</td>
+              <td class="rate">19.80</td>
+              <td class="rate">9.02</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>1,693.65
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">지점/전화</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(0) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge purple">계열사펀드</span><br>
+                SH중남미플러스(H)[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">1.85</td>
+              <td class="rate highlight">8.50</td>
+              <td class="rate">6.59</td>
+              <td class="rate">-5.55</td>
+              <td>
+                <span class="star-rate">★★★★★</span><br>0.07
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(7) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge danger">매우높은위험</span>
+                <span class="badge overseas">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span>
+                <span class="badge rec">추천</span><br>
+                한화그린히어로[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">18.47</td>
+              <td class="rate highlight">8.39</td>
+              <td class="rate">1.45</td>
+              <td class="rate">9.64</td>
+              <td>
+                <span class="star-rate">★★★★☆</span><br>34.99
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(8) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">국내주식</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">온라인</span><br>
+                한국투자중소밸류자[주식](C-e)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">2.82</td>
+              <td class="rate highlight">8.32</td>
+              <td class="rate">21.37</td>
+              <td class="rate">19.42</td>
+              <td>
+                <span class="star-rate">★★☆☆☆</span><br>45.83
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">매수</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(6) ▼</button></div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td class="fund-name">
+                <span class="badge high">높은위험</span>
+                <span class="badge orange">해외이머징</span>
+                <span class="badge yellow">수수료미징구</span>
+                <span class="badge blue">오프라인</span>
+                <span class="badge pink">보수체감</span><br>
+                미래에셋인도중소형포커스증권자1[주식](C1)
+                <span class="icon-search"></span>
+              </td>
+              <td class="rate">-1.60</td>
+              <td class="rate highlight">8.28</td>
+              <td class="rate">-6.07</td>
+              <td class="rate">-3.35</td>
+              <td>
+                <span class="star-rate">★★★☆☆</span><br>18.02
+              </td>
+              <td class="order-cell">
+                <button class="heart-btn"></button>
+                <button class="buy-btn2">지점/전화</button>
+                <div class="dropdown"><button class="dropdown-btn">클래스더보기(11) ▼</button></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice-box">
+        <ul>
+          <li>※ 펀드 수익률은 과거의 실적이며, 미래의 수익을 보장하지 않습니다.</li>
+          <li>※ 투자 전 상품설명서 및 약관을 반드시 읽어보시기 바랍니다.</li>
+          <li>※ 원금손실이 발생할 수 있습니다.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="./assets/logo.jpg" alt="신한투자증권 로고" height="30">
+        </div>
+        <div class="footer-links">
+          <a href="#">회사소개</a>
+          <a href="#">인증센터</a>
+          <a href="#">트레이딩 다운로드</a>
+          <a href="#">보안센터</a>
+        </div>
+        <div class="footer-contact">
+          <span>고객지원센터 1588-0365</span>
+        </div>
+        <div class="footer-copy">
+          <span>© 2024 신한투자증권. All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating 상담 문의 바 (실제와 완전히 동일하게) -->
+  <div class="floating-bar-exact">
+    <div class="floating-bar-inner">
+      <div class="floating-circle-exact">
+        <span class="floating-headset-icon"></span>
+        <div class="floating-title-exact">투자<br>상담문의</div>
+      </div>
+      <div class="floating-menu-exact">
+        <div class="floating-menu-item-exact">
+          <span class="floating-menu-icon-exact clock"></span>
+          <span class="floating-menu-label">오늘 본 펀드</span>
+        </div>
+        <div class="floating-menu-item-exact">
+          <span class="floating-menu-icon-exact heart"></span>
+          <span class="floating-menu-label">관심펀드</span>
+        </div>
+      </div>
+      <div class="floating-tail-exact"></div>
+    </div>
+  </div>
+</body>
+
+</html>

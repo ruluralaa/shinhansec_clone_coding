@@ -64,7 +64,7 @@ body {
 /* 메뉴 아이콘 */
 .menu-icons {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border-bottom: 2px solid #eee;
 }
 
@@ -74,13 +74,22 @@ body {
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    border-top: 3px solid #152475;
+}
+
+.menu-item.active{
+    border-top: 3px solid #006bd8;
+
 }
 
 .menu-item img {
-    width: 24px;
-    height: 24px;
+    width: 64px;
+    height: 64px;
     margin-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .menu-item span {
@@ -90,7 +99,7 @@ body {
 
 .menu-item.active span,
 .menu-item:hover span {
-    color: #0046FF;
+    color: #006bd8;
 }
 
 .menu-item.active img {
@@ -103,59 +112,64 @@ body {
 
 /* 기간 선택 버튼 */
 .period-selector {
+    width: 226px;
     display: flex;
-    gap: 10px;
+    gap: 0px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .period-btn {
+    width: 113px;
     padding: 10px 20px;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .period-btn.active {
-    background-color: #0046FF;
+    background-color: #006bd8;
     color: white;
-    border-color: #0046FF;
+    border-color: #006bd8;
 }
 
 /* 랭킹 컨테이너 */
 .ranking-container {
     display: flex;
-    gap: 20px;
+    background: url(./assets/bg_visual-return.jpg) no-repeat 50% 50%;
+    width: 738px;
 
 }
 
 .ranking-item {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 380px;
+    
     align-items: center;
-    text-align: center
-    /* background: white;
-    border-radius: 10px;
-    padding: 20px;
-    position: relative;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+    text-align: center;
+    color: white;
+    border-left: 2px dotted #cfdce3;
 }
 
 .rank {
-    /* font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #0046FF; */
+    font-size: 38px;
+    margin-bottom: 8px;
 }
 
 .fund-name {
-    /* font-size: 16px;
-    margin-bottom: 15px;
+    height: 52px;
+    font-size: 21px;
+    margin-bottom: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
     line-height: 1.4;
     height: 44px;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
 .yield {
@@ -163,15 +177,20 @@ body {
 }
 
 .yield-label {
-    /* font-size: 14px;
-    color: #666;
-    margin-right: 10px; */
+    font-size: 13px;
+    padding-top: 19px; 
+    border-top: 2px solid #cfdce3;
+
 }
 
 .yield-value {
-    /* font-size: 24px;
-    font-weight: bold;
-    color: #0046FF; */
+    font-size: 38px;
+}
+
+.yield-value span{
+    font-size: 17px;
+    margin-left: 4px;
+    margin-right: 7px;
 }
 
 .tags {
