@@ -135,17 +135,18 @@ body {
 .fund-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .fund-table thead {
   background: #f5f6f8;
+  font-size: 0.875rem;
 }
 .fund-table .thead-row1 th {
   background: #f5f6f8;
   border: 0.0625rem solid #d1d6dd;
   border-bottom: none;
   color: #222;
-  font-size: 1.08rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
@@ -163,10 +164,10 @@ body {
   height: 2.5rem;
   position: relative;
 }
-.th-select { width: 4%; min-width: 2.5rem; }
-.th-name { width: 32%; min-width: 16rem; }
+.th-select { width: 4%; min-width: 1.5rem; }
+.th-name { width: 32%; min-width: 23rem; }
 .th-rate { min-width: 24%; width: 24%; }
-.th-grade { width: 14%; min-width: 7rem; }
+.th-grade { width: 14%; min-width: 6rem; }
 .th-order { width: 14%; min-width: 7rem; }
 .th-period {
   background: #f5f6f8;
@@ -197,11 +198,12 @@ body {
   padding: 0.625rem 0.75rem;
   text-align: center;
   border-bottom: 0.0625rem solid #e5e8eb;
+  font-size: 0.875rem;
 }
 .fund-table th {
   color: #003478;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.875rem;
 }
 .fund-table .fund-name {
   text-align: left;
@@ -209,10 +211,12 @@ body {
   font-weight: 500;
   white-space: normal;
   overflow: visible;
+  font-size: 0.875rem;
 }
 .fund-table .highlight {
   color: #e94e77;
   font-weight: 700;
+  font-size: 0.875rem;
 }
 .star {
   color: #ffd600;
@@ -692,4 +696,64 @@ body {
 .heart-btn:hover {
   border-color: #1976d2;
   background: #e3f2fd url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="%231976d2" xmlns="http://www.w3.org/2000/svg"><path d="M10 17s-6-3.73-6-8.25A4.25 4.25 0 0 1 10 4.5a4.25 4.25 0 0 1 6 4.25C16 13.27 10 17 10 17Z" stroke="%231976d2" stroke-width="1.5" fill="none"/></svg>') no-repeat center/1.2rem 1.2rem;
+}
+
+/* 신한투자증권 안내문구 박스 */
+.shinhan-info-box {
+  background: #fff;
+  border: 1.5px solid #dbe8f7;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.04);
+  padding: 2rem 5rem 1.5rem 1.5rem;
+  margin: 2.5rem 0 1.5rem 0;
+  font-size: 1.3rem;
+  color: #222;
+  position: relative;
+}
+.shinhan-info-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #0070c0;
+}
+.shinhan-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: #eaf3fa;
+  color: #1a9bd7;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-right: 0.75rem;
+  border: 2px solid #1a9bd7;
+}
+.shinhan-info-title-text {
+  color: #0070c0;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.shinhan-info-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.84rem;
+}
+.shinhan-info-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.7;
+  color: #222;
+}
+.shinhan-info-list li.red {
+  color: #e94e77;
+  font-weight: 500;
+}
+.shinhan-info-footnote {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
 }
