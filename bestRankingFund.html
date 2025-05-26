@@ -1,1 +1,191 @@
-asdf
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>신한투자증권</title>
+  <link rel="stylesheet" href="style_brf.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 상단 네비게이션 바 -->
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="logo">
+          <img src="logo.jpg" alt="신한투자증권 로고">
+        </div>
+        <nav class="top-menu">
+          <a href="#">로그인</a>
+          <a href="#">계좌개설</a>
+          <a href="#">ID 등록</a>
+          <a href="#">인증센터</a>
+          <a href="#">신한Premier</a>
+          <a href="#">퇴직연금</a>
+          <a href="#">GIB</a>
+          <a href="#">Tops Club</a>
+          <a href="#">소비자보호포털</a>
+          <a href="#">상품공시실</a>
+        </nav>
+      </div>
+    </div>
+    <div class="main-menu-bar">
+      <div class="container">
+        <nav class="main-menu">
+          <a href="#">나의 자산분석</a>
+          <a href="#">투자상품</a>
+          <a href="#">증권거래</a>
+          <a href="#">금융상품</a>
+          <a href="#">투자정보</a>
+          <a href="#">마이데이터</a>
+          <a href="#">고객센터</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main class="main-layout">
+
+    <!-- 왼쪽 본문 영역 -->
+    <section class="main-content">
+      <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 18px;">기간별 수익률 상위 20개 펀드 상품</h2>
+      <div class="fund-filter-bar">
+        <button class="active">수익률</button>
+        <button>수익금액</button>
+        <label style="margin-left:16px;">
+          <input type="checkbox" checked> 네모박스 보기
+        </label>
+        <label>
+          <input type="checkbox"> 펀드순서 보기
+        </label>
+        <span class="fund-date" style="margin-left:auto; color:#888; font-size:13px;">2025.05.23 기준</span>
+      </div>
+      <div class="fund-table-wrap">
+        <table class="fund-table">
+          <thead>
+            <tr>
+              <th>선택</th>
+              <th>펀드명</th>
+              <th>1개월</th>
+              <th>3개월</th>
+              <th>6개월</th>
+              <th>1년</th>
+              <th>위험등급</th>
+              <th>비교</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="fund-title">IM에셋월드글로벌증권자(주식)(C-e)</div>
+                <div class="fund-desc">[주식재간접] | 해외</div>
+              </td>
+              <td>0.66%</td>
+              <td>10.28%</td>
+              <td>27.10%</td>
+              <td>40.92%</td>
+              <td>
+                <span class="risk-star">⭐⭐⭐⭐⭐</span>
+              </td>
+              <td><button class="compare-btn">비교</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="fund-title">신한 글로벌로보증권자 1호(주식)(C-e)</div>
+                <div class="fund-desc">[주식] | 국내</div>
+              </td>
+              <td>-2.41%</td>
+              <td>14.91%</td>
+              <td>23.68%</td>
+              <td>36.02%</td>
+              <td>
+                <span class="risk-star">⭐⭐⭐⭐</span>
+              </td>
+              <td><button class="compare-btn">비교</button></td>
+            </tr>
+            <!-- 필요시 tr을 복사해서 20개로 만드세요 -->
+          </tbody>
+        </table>
+      </div>
+      <div class="fund-notice">
+        <h3>확인하세요!</h3>
+        <ul>
+          <li>펀드상품은 예금자보호법에 따라 예금자보호가 되지 않습니다.</li>
+          <li>과거의 수익률이 미래의 수익을 보장하지 않습니다.</li>
+          <li>투자 전 상품설명서 및 약관을 반드시 확인하시기 바랍니다.</li>
+          <li>기타 자세한 사항은 고객센터로 문의해 주세요.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 오른쪽 사이드바 -->
+    <aside class="right-sidebar">
+      <div class="investment-tip">
+        오늘의 투자전략
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="customer-center">
+          <h3>고객지원센터</h3>
+          <div class="phone-number">1588-0365</div>
+          <div class="ai-service">
+            <p>말로하는 AI 상담서비스, 24시간 챗봇 (신한 SOL증권)</p>
+          </div>
+        </div>
+        <div class="contact-list">
+          <a href="#">해외주식</a>
+          <a href="#">연금</a>
+          <a href="#">디지털PB센터</a>
+          <a href="#">시니어전용</a>
+        </div>
+      </div>
+      
+      <div class="footer-center">
+        <div class="footer-links">
+          <a href="#">회사소개</a>
+          <a href="#">인증센터</a>
+          <a href="#">트레이딩 다운로드</a>
+          <a href="#">보안센터</a>
+        </div>
+        <div class="company-info">
+          <p>서울특별시 영등포구 의사당대로 96 (TP Tower)</p>
+          <p>사업자등록번호: 114-81-03194</p>
+          <p>대표이사: 정현민</p>
+          <p>© 2024 신한투자증권. All Rights Reserved.</p>
+        </div>
+      </div>
+      
+      <div class="footer-right">
+        <div class="service-icons">
+          <a href="#"><span>📱</span>원격제어</a>
+          <a href="#"><span>❓</span>FAQ</a>
+          <a href="#"><span>💬</span>1:1상담</a>
+          <a href="#"><span>📄</span>업무안내</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><span>📘</span>페이스북</a>
+          <a href="#"><span>📸</span>인스타그램</a>
+          <a href="#"><span>🎥</span>유튜브</a>
+          <a href="#"><span>💬</span>카카오톡</a>
+        </div>
+        <div class="awards">
+          <img src="wa-logo.png" alt="웹어워드">
+          <img src="one-shinhan.png" alt="One Shinhan">
+        </div>
+        <button class="top-button">TOP</button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
