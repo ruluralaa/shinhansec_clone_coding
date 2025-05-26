@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+}
+
+/* 상단 네비게이션 */
+.top-nav {
+  background-color: #052c59;
+  color: white;
+  padding: 12px 24px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.top-menu nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.top-menu nav ul li {
+  cursor: pointer;
+}
+
+.top-icons button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+/* 메인 레이아웃 */
+.main-layout {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+/* 본문 영역 */
+.main-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-hero,
+.guide-section,
+.analysis-section,
+.asset-section,
+.portfolio-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 150px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 사이드바 */
+.right-sidebar {
+  flex: 1;
+  background-color: #e9eff5;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+/* 푸터 */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #052c59;
+  color: white;
+  text-align: center;
+}
