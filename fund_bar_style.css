@@ -67,11 +67,46 @@ body {
 }
 
 /* 메뉴 아이콘 */
+
 .menu-icons {
     display: flex;
     /* justify-content: space-between; */
     border-bottom: 2px solid #eee;
 }
+
+/* <button class="icon icon-chart" onclick="this.classList.toggle('selected')"></button> */
+/* 공통 */
+.menu-icons button{
+    border: none;
+}
+.menu-icons-detail {
+    display: inline-block;
+    width: 64px;    /* 아이콘 가로 */
+    height: 64px;   /* 아이콘 세로(한 개) */
+    background-image: url('./assets/bg_themeFundNavi.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+    margin: 0 30px
+  }
+  
+  /* 기본(검정)는 y-offset: 0 */
+  .earn-icon { background-position: 0 0; }
+  .sale-icon  { background-position: -64px 0; }
+  .setting-icon { background-position: -128px 0; }
+  .age-icon { background-position: -192px 0; }
+  .fund-icon { background-position: -256px 0; }
+  .compony-icon { background-position: -320px 0; }
+
+  /* … 나머지 아이콘들 … */
+  
+  /* 선택되었을 때 파랑(이미지 아래 줄로 이동) */
+  .earn-icon.selected { background-position: 0 -64px; }
+  .sale-icon.selected  { background-position: -64px -64px; }
+  .setting-icon.selected { background-position: -128px -64px; }
+  .age-icon.selected { background-position: -192px -64px; }
+  .fund-icon.selected { background-position: -256px -64px; }
+  .compony-icon.selected { background-position: -320px -64px; }
 
 .menu-item {
     display: flex;
@@ -102,10 +137,14 @@ body {
     color: black;
 }
 
-.menu-item.active span,
- .menu-item:hover span {
+.menu-item.active span{
     color: #1598dc;
 }
+
+.menu-item.active button{
+    background-position-y: -64px;
+}
+
 
 .menu-item.active img {
     filter: invert(36%) sepia(74%) saturate(4422%) hue-rotate(192deg) brightness(93%) contrast(97%);
