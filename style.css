@@ -1024,12 +1024,16 @@ header {
   user-select: none;
 }
 
+
+
+/* 여기서부터 gnb 메뉴 스타일 */
+
 .gnb-sub-menu {
   background: #f5f7fa;
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 1px solid #e5e8ef;
   width: 64.3%;
   max-width: 1200px;
@@ -1038,14 +1042,27 @@ header {
 }
 .gnb-sub-menu-inner {
   display: flex;
+  gap: 0;
   align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.gnb-sub-menu-inner * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 .gnb-home-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.gnb-icon-list {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-right: 8px;
   vertical-align: middle;
@@ -1064,3 +1081,4 @@ header {
 .gnb-links a:hover {
   color: #0046FF;
 }
+
