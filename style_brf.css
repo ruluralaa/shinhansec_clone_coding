@@ -419,6 +419,39 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+.action-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.08rem;
+  cursor: pointer;
+  padding: 0 8px;
+  color: #222;
+}
+.action-btn .action-text.blue {
+  color: #1a9bd7;
+  font-weight: 500;
+}
+.action-btn .action-text {
+  font-weight: 500;
+  margin-left: 2px;
+}
+.icon-list {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="8" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="12" width="8" height="2" rx="1" fill="%231a9bd7"/></svg>') no-repeat center/contain;
+}
+.icon-card {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('https://shinhansec.com/siw/common/images/common/bg_icon.png') no-repeat;
+  background-position: -70px -48px;
+  margin-right: 2px;
+}
+
 .btnIcon {
   position: relative;
   display: inline-flex;
