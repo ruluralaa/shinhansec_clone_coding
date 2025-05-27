@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   background: #ffffff;
   color: #222;
   margin: 0;
@@ -17,13 +17,12 @@ body {
   background: transparent;
 }
 
-/* 상단 네비게이션 */
 
 /* 펀드 테이블 */
 .fund-table-wrap {
   background: #fff;
   border-radius: 0.75rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.06);
   padding: 0.5rem 0 0.5rem 0;
   margin-bottom: 1.5rem;
   overflow-x: auto;
@@ -60,26 +59,11 @@ body {
   height: 2.5rem;
   position: relative;
 }
-.th-select {
-  width: 4%;
-  min-width: 1.5rem;
-}
-.th-name {
-  width: 32%;
-  min-width: 23rem;
-}
-.th-rate {
-  min-width: 24%;
-  width: 24%;
-}
-.th-grade {
-  width: 14%;
-  min-width: 6rem;
-}
-.th-order {
-  width: 14%;
-  min-width: 7rem;
-}
+.th-select { width: 4%; min-width: 1.5rem; }
+.th-name { width: 32%; min-width: 23rem; }
+.th-rate { min-width: 24%; width: 24%; }
+.th-grade { width: 14%; min-width: 6rem; }
+.th-order { width: 14%; min-width: 7rem; }
 .th-period {
   background: #f5f6f8;
   border-right: 0.0625rem solid #d1d6dd;
@@ -103,11 +87,9 @@ body {
   height: 0.875rem;
   vertical-align: middle;
   margin-left: 0.125rem;
-  background: url('data:image/svg+xml;utf8,<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5l4 4 4-4" stroke="%23666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>')
-    no-repeat center/contain;
+  background: url('data:image/svg+xml;utf8,<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5l4 4 4-4" stroke="%23666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center/contain;
 }
-.fund-table th,
-.fund-table td {
+.fund-table th, .fund-table td {
   padding: 0.625rem 0.35rem;
   text-align: center;
   border-bottom: 0.0625rem solid #e5e8eb;
@@ -162,7 +144,7 @@ body {
 .phone-number {
   font-size: 32px;
   font-weight: 700;
-  color: #0046ff;
+  color: #0046FF;
   margin-bottom: 10px;
 }
 
@@ -185,7 +167,7 @@ body {
 }
 
 .contact-list a:hover {
-  color: #0046ff;
+  color: #0046FF;
 }
 
 /* 가운데 영역 */
@@ -209,7 +191,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #0046ff;
+  color: #0046FF;
 }
 
 .company-info {
@@ -226,15 +208,13 @@ body {
   gap: 20px;
 }
 
-.service-icons,
-.social-icons {
+.service-icons, .social-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.service-icons a,
-.social-icons a {
+.service-icons a, .social-icons a {
   text-decoration: none;
   color: #666;
   font-size: 14px;
@@ -243,9 +223,8 @@ body {
   gap: 5px;
 }
 
-.service-icons a:hover,
-.social-icons a:hover {
-  color: #0046ff;
+.service-icons a:hover, .social-icons a:hover {
+  color: #0046FF;
 }
 
 .awards {
@@ -260,7 +239,7 @@ body {
 
 .top-button {
   align-self: flex-end;
-  background-color: #0046ff;
+  background-color: #0046FF;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -271,12 +250,11 @@ body {
 }
 
 .top-button:hover {
-  background-color: #0033cc;
+  background-color: #0033CC;
 }
 
 /* 반응형 */
-@media (max-width: 56.25rem) {
-  /* 900px */
+@media (max-width: 56.25rem) { /* 900px */
   .container {
     max-width: 100%;
     padding: 0 0.5rem;
@@ -305,8 +283,7 @@ body {
   display: inline-block;
   width: 5px;
   height: 19px;
-  background: url(https://www.shinhansec.com/siw/common/images/common/bg_titdep.gif)
-    0 0 no-repeat;
+  background: url(https://www.shinhansec.com/siw/common/images/common/bg_titdep.gif) 0 0 no-repeat;
   border-radius: 0;
   margin-right: 10px;
   vertical-align: middle;
@@ -348,9 +325,7 @@ body {
 .fund-tab.active::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -0.15rem;
+  left: 0; right: 0; bottom: -0.15rem;
   height: 0.15rem;
   background: #fff;
   z-index: 3;
@@ -392,15 +367,13 @@ body {
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="8" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="12" width="8" height="2" rx="1" fill="%231a9bd7"/></svg>')
-    no-repeat center/contain;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="8" width="14" height="2" rx="1" fill="%231a9bd7"/><rect x="2" y="12" width="8" height="2" rx="1" fill="%231a9bd7"/></svg>') no-repeat center/contain;
 }
 .icon-card {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url("https://shinhansec.com/siw/common/images/common/bg_icon.png")
-    no-repeat;
+  background: url('https://shinhansec.com/siw/common/images/common/bg_icon.png') no-repeat;
   background-position: -70px -48px;
   margin-right: 2px;
 }
@@ -421,13 +394,12 @@ body {
   height: 30px;
 }
 .btnIcon:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 12px;
   height: 16px;
   margin: 2px 10px 0 0;
-  background: url(https://www.shinhansec.com/siw/common/images/common/bg_icon.png)
-    no-repeat;
+  background: url(https://www.shinhansec.com/siw/common/images/common/bg_icon.png) no-repeat;
   vertical-align: middle;
   transition: background-position 0.2s;
 }
@@ -493,15 +465,17 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-right: 4px;
-  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 6h11l-1.2 6.4a2 2 0 0 1-2 1.6H8.7a2 2 0 0 1-2-1.6L5.5 6z" stroke="%231a9bd7" stroke-width="1.5" fill="none"/><circle cx="8.5" cy="16" r="1" fill="%231a9bd7"/><circle cx="14.5" cy="16" r="1" fill="%231a9bd7"/></svg>') no-repeat center/contain;
+  background: url('https://shinhansec.com/siw/common/images/common/bg_icon.png') no-repeat;
+  background-position: -82px 2px;
+  margin-right: 2px;
 }
 .icon-compare {
   display: inline-block;
   width: 18px;
   height: 20px;
-  margin-right: 4px;
-  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 10h10M7 8l-2 2 2 2" stroke="%23333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center/contain;
+  background: url('https://shinhansec.com/siw/common/images/common/bg_icon.png') no-repeat;
+  background-position: -109px -19px;
+  margin-right: 2px;
 }
 .fund-util-right {
   display: flex;
@@ -509,6 +483,7 @@ body {
   gap: 16px;
   font-size: 1.05rem;
 }
+
 
 .util-date {
   font-size: 1.08rem;
@@ -547,7 +522,7 @@ body {
   height: 100%;
   background: none;
   border-radius: 3rem 3rem 3.75rem 3.75rem / 3rem 3rem 6.25rem 6.25rem;
-  box-shadow: 0 0.125rem 1rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.125rem 1rem rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -566,7 +541,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.10);
   position: relative;
 }
 .floating-headset-icon {
@@ -574,8 +549,7 @@ body {
   width: 1.25rem; /* 20px → 1.25rem */
   height: 1.25rem;
   margin-bottom: 0.3125rem;
-  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 11v-1c0-4.42 3.58-8 8-8s8 3.58 8 8v1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><rect x="3.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><rect x="13.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><path d="M6.5 16v1a2 2 0 0 0 2 2h1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><path d="M16.5 16v1a2 2 0 0 1-2 2h-1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/></svg>')
-    no-repeat center/contain;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 11v-1c0-4.42 3.58-8 8-8s8 3.58 8 8v1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><rect x="3.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><rect x="13.5" y="11" width="3" height="5" rx="1.5" stroke="%23fff" stroke-width="1.5"/><path d="M6.5 16v1a2 2 0 0 0 2 2h1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/><path d="M16.5 16v1a2 2 0 0 1-2 2h-1" stroke="%23fff" stroke-width="1.5" stroke-linecap="round"/></svg>') no-repeat center/contain;
 }
 .floating-title-exact {
   color: #fff;
@@ -612,12 +586,10 @@ body {
   margin-bottom: 0;
 }
 .floating-menu-icon-exact.clock {
-  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7.5" stroke="%23666" stroke-width="1.5" fill="none"/><path d="M9 3.5v5l3 3" stroke="%23666" stroke-width="1.5" stroke-linecap="round"/></svg>')
-    no-repeat center/contain;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="7.5" stroke="%23666" stroke-width="1.5" fill="none"/><path d="M9 3.5v5l3 3" stroke="%23666" stroke-width="1.5" stroke-linecap="round"/></svg>') no-repeat center/contain;
 }
 .floating-menu-icon-exact.heart {
-  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16s-6-3.73-6-8.25A4.25 4.25 0 0 1 9 3.5a4.25 4.25 0 0 1 6 4.25C15 12.27 9 16 9 16Z" stroke="%23666" stroke-width="1.5" fill="none"/></svg>')
-    no-repeat center/contain;
+  background: url('data:image/svg+xml;utf8,<svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16s-6-3.73-6-8.25A4.25 4.25 0 0 1 9 3.5a4.25 4.25 0 0 1 6 4.25C15 12.27 9 16 9 16Z" stroke="%23666" stroke-width="1.5" fill="none"/></svg>') no-repeat center/contain;
 }
 .floating-menu-label {
   color: #666;
@@ -633,7 +605,7 @@ body {
   background: #e6e6ee;
   border-radius: 50%;
   margin: 0.5rem auto 0 auto;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.08);
   position: relative;
   left: 0.25rem;
   opacity: 0.5;
@@ -702,16 +674,21 @@ body {
 .heart-btn {
   width: 2rem;
   height: 2rem;
-  border: 0.0625rem solid #d1d6dd;
-  border-radius: 50%;
-  background: #fff url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 17s-6-3.73-6-8.25A4.25 4.25 0 0 1 10 4.5a4.25 4.25 0 0 1 6 4.25C16 13.27 10 17 10 17Z" stroke="%23b0b0b0" stroke-width="1.5" fill="none"/></svg>') no-repeat center/1.2rem 1.2rem;
-  cursor: pointer;
-  margin-right: 0.5rem;
-  transition: border 0.15s, background 0.15s;
+  border: 1.5px solid #bfc8d6;
+  font-size: 1.5rem;
+  border-radius: 10%;
+  background: #fff;
+  padding: 0;
+  margin-right: 0.1rem;
 }
-.heart-btn:hover {
-  border-color: #1976d2;
-  background: #e3f2fd url('data:image/svg+xml;utf8,<svg width="20" height="20" fill="%231976d2" xmlns="http://www.w3.org/2000/svg"><path d="M10 17s-6-3.73-6-8.25A4.25 4.25 0 0 1 10 4.5a4.25 4.25 0 0 1 6 4.25C16 13.27 10 17 10 17Z" stroke="%231976d2" stroke-width="1.5" fill="none"/></svg>') no-repeat center/1.2rem 1.2rem;
+
+.buy-btn2 {
+  width: 4rem;
+  height: 2rem;
+  color: #1976d2;
+  border: 0.0625rem solid #1976d2;
+  background-color: #FFF;
+  border-radius: 10%;
 }
 
 /* 신한투자증권 안내문구 박스 */
@@ -719,7 +696,7 @@ body {
   background: #fff;
   border: 1.5px solid #dbe8f7;
   border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.04);
   padding: 2rem 5rem 1.5rem 1.5rem;
   margin: 2.5rem 0 1.5rem 0;
   font-size: 1.3rem;
@@ -756,7 +733,7 @@ body {
   padding-left: 16px;
 }
 .shinhan-info-title-text:before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 5px;
   height: 19px;
@@ -794,15 +771,14 @@ body {
 }
 
 .btnIco:before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
   vertical-align: middle;
-  background: url("https://shinhansec.com/siw/common/images/common/bg_icon.png")
-    no-repeat;
+  background: url('https://shinhansec.com/siw/common/images/common/bg_icon.png') no-repeat;
 }
 
 /* 일괄매수 아이콘 */
@@ -837,12 +813,11 @@ body {
   /* background: none; */
   padding: 0;
   /* margin-right: 0.5rem; */
-}
-.util-checkbox input[type="checkbox"] {
-  appearance: none; /* 브라우저 기본 스타일 제거 */
+}.util-checkbox input[type="checkbox"] {
+  appearance: none;               /* 브라우저 기본 스타일 제거 */
   width: 22px;
   height: 22px;
-  background-color: white; /* 흰 네모 */
+  background-color: white;        /* 흰 네모 */
   border: 1.5px solid #bfc8d6;
   /* border-radius: 4px; */
   box-shadow: 0 0 0 0.3px#000;
@@ -852,13 +827,13 @@ body {
 }
 
 .util-checkbox input[type="checkbox"]::after {
-  content: "";
+  content: '';
   position: absolute;
   /* top: 4px; */
   left: 6px;
   width: 6px;
   height: 12px;
-  border: solid #1a9bd7; /* 파란 체크 */
+  border: solid #1a9bd7;          /* 파란 체크 */
   border-width: 0 3.7px 3.7px 0;
   transform: rotate(45deg);
   display: none;
@@ -868,7 +843,7 @@ body {
   display: block;
 }
 
-.util-divider {
+.util-divider { 
   display: inline-block;
   width: 1px;
   height: 22px;
@@ -900,6 +875,7 @@ body {
   font-size: 14px;
 }
 
+
 /* 로딩 스피너 중앙 위치 */
 .loading-spinner {
   position: fixed;
@@ -922,6 +898,8 @@ body {
 /* 두 이미지 모두 절대 위치로 겹치게 */
 .loading-img,
 .loading-overlay {
+  
+
 }
 
 /* 선택적으로 overlay에 회전 효과 */
@@ -945,10 +923,5 @@ body {
 
 /* 회전 애니메이션 정의 */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
