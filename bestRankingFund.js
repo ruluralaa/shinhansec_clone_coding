@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     initTabs();
     initLoadingBindings();
+    initPeriodSelectorTabs();
+    initMenuIconsTabs();
 });
 
 
@@ -35,7 +37,7 @@ function showLoading() {
     setTimeout(() => {
         spinner.style.display = 'none';
         document.body.style.overflow = ''; // 스크롤 복원
-    }, 2000);
+    }, 1500);
 }
 
 // 특정 요소에 로딩 이벤트를 바인딩하는 함수
@@ -48,15 +50,24 @@ function bindLoadingToElement(selector, eventType = 'click') {
 
 // 로딩 이벤트를 바인딩하는 초기화 함수
 function initLoadingBindings() {
-    // 체크박스 변경 시 로딩
+    // 기존 체크박스 변경 시 로딩
     bindLoadingToElement('.util-checkbox input[type="checkbox"]', 'change');
 
-    // 버튼 클릭 시 로딩
+    // 기존 버튼 클릭 시 로딩
     bindLoadingToElement('#detail-btn');
     bindLoadingToElement('#cardview-btn');
 
-    // 필요한 다른 요소가 있다면 이 함수 내에서 계속 추가 가능
-    // bindLoadingToElement('.your-selector');
+    // fund-top-tabs의 버튼들에 로딩 추가
+    bindLoadingToElement('.fund-top-tabs .fund-tab');
+
+    // thead-row2의 개월 버튼들에 로딩 추가
+    bindLoadingToElement('.thead-row2 .th-period');
+
+    // menu-icons의 버튼들에 로딩 추가
+    bindLoadingToElement('.menu-icons .menu-icons-detail');
+
+    // period-selector의 버튼들에 로딩 추가
+    bindLoadingToElement('.period-selector .period-btn');
 }
 
 
@@ -80,6 +91,28 @@ function initLoadingEvent() {
                 spinner.style.display = 'none';
                 overlay.style.display = 'none';
             }, 1000);
+        });
+    });
+}
+
+// period-selector의 버튼 클릭 시 active 클래스를 토글하는 함수
+function initPeriodSelectorTabs() {
+    const periodBtns = document.querySelectorAll('.period-selector .period-btn');
+    periodBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            periodBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+}
+
+// menu-icons의 menu-item 클릭 시 active 클래스를 토글하는 함수
+function initMenuIconsTabs() {
+    const menuItems = document.querySelectorAll('.menu-icons .menu-item');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            menuItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
         });
     });
 }
