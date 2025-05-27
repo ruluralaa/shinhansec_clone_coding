@@ -1,0 +1,303 @@
+header {
+  background: none;
+  background-image: url("./assets/bg_top 1-2.png");
+  background-size: auto 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  max-width: 75rem; /* 1200px */
+  margin: 0 auto;
+  padding: 0 1.25rem; /* 20px */
+}
+
+/* 상단 바 스타일 */
+.top-bar {
+  background-color: transparent;
+  height: 3.75rem; /* 60px */
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 64.3%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wave-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/wave.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.top-bar .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.625rem; /* 10px */
+}
+
+.logo img {
+  flex: 1;
+  height: 3rem; /* 42px */
+  width: auto;
+  object-fit: contain;
+  transform: scale(1);
+  transform-origin: left center;
+}
+
+.space p {
+  flex: 2;
+}
+
+.top-menu {
+  flex: 3;
+  display: flex;
+  gap: 0rem;
+  font-size: 0; /* 16px */
+}
+
+.top-menu .dot {
+  color: #999;
+  margin: 0.25rem;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1;
+}
+
+.top-menu a:hover {
+  color: #ffd600;
+}
+
+/* 소비자보호포털, 상품공시실 메뉴 스타일 */
+.top-menu a:nth-last-child(3),
+.top-menu a:nth-last-child(2),
+.top-menu a:last-child {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+}
+
+/* 메인 메뉴 바 스타일 */
+.main-menu-bar {
+  background-color: #fff;
+  height: 3.75rem; /* 60px */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+  margin-top: 0;
+  width: 64.3%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-menu-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding: 0px;
+}
+
+.main-menu {
+  display: flex;
+  flex: 7;
+  gap: 1.5rem; /* 40px */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-menu a:hover {
+  color: #0046ff;
+}
+
+/* 메인 헤더 스타일 */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2.5rem; /* 12px 40px */
+  height: 3.75rem; /* 60px */
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.25rem; /* 20px */
+  font-size: 1.25rem; /* 20px */
+  color: #333;
+}
+
+.header-icons span {
+  cursor: pointer;
+}
+
+.header-icons span:hover {
+  color: #0046ff;
+}
+
+/* 상단 네비게이션 */
+.top-nav {
+  background-color: #052c59;
+  color: white;
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex: 4;
+}
+
+.top-menu .space {
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex: 3;
+}
+
+.top-menu nav ul {
+  flex: 7;
+  display: flex;
+  list-style: none;
+  gap: 1.25rem; /* 20px */
+}
+
+.top-menu nav ul li {
+  cursor: pointer;
+}
+
+.top-icons button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 0.625rem; /* 10px */
+  font-size: 1.2rem;
+}
+
+.nav-buttons {
+  display: flex;
+  background-color: #009cde;
+  height: 100%;
+  margin-left: 0;
+
+  align-items: center;
+}
+
+.icon-btn {
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s ease;
+  padding: 0;
+}
+
+.icon-btn img {
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.icon-btn:hover {
+  filter: brightness(1.05);
+}
+
+.icon-btn:hover img {
+  filter: brightness(0) invert(1) brightness(1.05);
+}
+
+.gnb-sub-menu {
+  background: #f5f7fa;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e8ef;
+  width: 64.3%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.gnb-sub-menu-inner {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.gnb-sub-menu-inner * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.gnb-home-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.gnb-icon-list {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.gnb-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.gnb-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.gnb-links a:hover {
+  color: #0046ff;
+}
