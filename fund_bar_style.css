@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -19,39 +20,43 @@ body {
 }
 
 /* 메인 타이틀 */
-.main-title {
+.main-title-fund {
     text-align: center;
-    font-size: 28px;
-    margin: 30px 0;
-    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
 }
 
 /* 랭킹 헤더 섹션 */
 .ranking-header {
-    margin-bottom: 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .title-section {
-    margin-bottom: 30px;
+    margin-right: 16px;
 }
 
 .best-title {
-    color: #0046FF;
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #1598dc;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: Tahoma;
+    letter-spacing: -.025em;
+    line-height: .9;
 }
 
 .sub-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 66px;
+    margin-bottom: 20px;
+    letter-spacing: -.07em;
+    line-height: 1;
 }
 
 .description {
     color: #666;
     font-size: 14px;
+    margin-bottom: 35px;
+
 }
 
 /* 메뉴 디테일 */
@@ -76,12 +81,12 @@ body {
     transition: all 0.3s ease;
     padding-top: 40px;
     padding-bottom: 47px;
-    border-top: 3px solid #152475;
+    border-top: 4px solid #152475;
 }
 
 .menu-item.active{
-    border-top: 3px solid #006bd8;
-
+    border-top: 4px solid #1598dc;
+    font: #1598dc
 }
 
 .menu-item img {
@@ -93,47 +98,76 @@ body {
 }
 
 .menu-item span {
-    font-size: 14px;
-    color: #333;
+    font-size: 17px;
+    color: black;
 }
 
 .menu-item.active span,
-.menu-item:hover span {
-    color: #006bd8;
+ .menu-item:hover span {
+    color: #1598dc;
 }
 
 .menu-item.active img {
-    filter: invert(23%) sepia(90%) saturate(6977%) hue-rotate(225deg) brightness(97%) contrast(108%);
+    filter: invert(36%) sepia(74%) saturate(4422%) hue-rotate(192deg) brightness(93%) contrast(97%);
 }
 
-.menu-item:hover img {
+/* .menu-item:hover img {
     filter: invert(23%) sepia(90%) saturate(6977%) hue-rotate(225deg) brightness(97%) contrast(108%);
-}
+} */
 
 /* 기간 선택 버튼 */
+
 .period-selector {
     width: 226px;
     display: flex;
-    gap: 0px;
-    margin-bottom: 30px;
     flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 30px;
 }
 
+/* 버튼 기본 스타일 */
 .period-btn {
     width: 113px;
-    padding: 10px 20px;
-    border: 0px solid #ddd;
-    background-color: white;
-    border-radius: 0px;
+    height: 48px;                /* 사진 기준 높이 */
+    /* line-height: 56px;           수직 중앙 정렬 */
+    text-align: center;
+    font-size: 16px;
+    color: white;                /* 기본 흰색 텍스트 */
+    background-color: #5e7387;  /* 기본 회색 배경 */
+    border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
+    padding-top: 1px;
+    line-height: 47px;
 }
 
-.period-btn.active {
-    background-color: #006bd8;
+/* 활성화된 버튼 스타일 */
+.period-btn.active, .period-btn:hover {
+    background-color: #1598dc;
+    position: relative;
     color: white;
-    border-color: #006bd8;
+    font-weight: 600;
 }
+
+.period-btn:hover::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+/* 체크 아이콘 추가 (활성화 시) */
+.period-btn.active::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
 
 /* 랭킹 컨테이너 */
 .ranking-container {
@@ -149,7 +183,6 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 380px;
-    
     align-items: center;
     text-align: center;
     color: white;
@@ -159,17 +192,18 @@ body {
 .rank {
     font-size: 38px;
     margin-bottom: 8px;
+    line-height: 1;
 }
 
 .fund-name {
-    height: 52px;
     font-size: 21px;
     margin-bottom: 17px;
     padding-right: 10px;
     padding-left: 10px;
-    line-height: 1.4;
-    height: 44px;
+    line-height: 1.25;
+    /* height: 44px; */
     overflow: hidden;
+    /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
 .yield {
@@ -185,6 +219,7 @@ body {
 
 .yield-value {
     font-size: 38px;
+    font-weight: 600;
 }
 
 .yield-value span{
@@ -192,35 +227,53 @@ body {
     margin-left: 4px;
     margin-right: 7px;
 }
-
 .tags {
-    /* display: flex;
-    gap: 8px;
-    margin: 15px 0; */
-}
+    display: flex;           /* 가로로 나열 */
+  }
+  
+  .tag {
+    background: rgba(255, 255, 255, 0.7); /* 반투명 흰색 배경 */
+    border-radius: 50%;      /* 완전 둥근 원 */
+    width: 55px;
+    height: 55px;
+    margin: 0 4px;
+    display: flex;           /* 내용 중앙 정렬을 위한 flex */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    font-size: 13px;         /* 글자 크기 */
+    color: #333;             /* 글자 색상 */
+    font-weight: normal;
+    line-height: 1.25;
+    vertical-align: middle;
+    text-align: center;      /* 혹시 줄 바꿈시 대비 */
+    user-select: none;       /* 텍스트 선택 방지 (선택사항) */
+  }
 
-.tag {
-    /* padding: 5px 10px;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-    font-size: 12px;
-    color: #666; */
-}
+
+
+
+
+
 
 .detail-btn {
-    /* width: 100%;
-    padding: 10px;
     background-color: transparent;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease; */
+    /* display: inline-block; */
+    width: 150px;
+    height: 32px;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-decoration: none; */
+    border: 1px solid #fff;
+    border-color: rgba(255, 255, 255, .8);
+    text-align: center;
+    margin-top: 20px;
 }
 
 .detail-btn:hover {
-    /* background-color: #0046FF;
-    color: white;
-    border-color: #0046FF;*/
+    background-color: rgba(0, 0, 0, 0.1);
 } 
 
 
