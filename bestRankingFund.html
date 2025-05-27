@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="fund_bar_style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <!-- 상단 네비게이션 -->
   <header class="header">
@@ -165,19 +163,19 @@
       </div>
       <script>
         // 탭 클릭 활성화
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
           const tabs = document.querySelectorAll('.fund-tab');
           tabs.forEach(tab => {
-            tab.addEventListener('click', function () {
+            tab.addEventListener('click', function() {
               tabs.forEach(t => t.classList.remove('active'));
               this.classList.add('active');
             });
           });
           // 버튼 클릭시 효과(예시)
-          document.getElementById('detail-btn').onclick = function () {
+          document.getElementById('detail-btn').onclick = function() {
             alert('자세히보기 클릭!');
           };
-          document.getElementById('cardview-btn').onclick = function () {
+          document.getElementById('cardview-btn').onclick = function() {
             alert('카드뷰보기 클릭!');
           };
         });
@@ -709,5 +707,4 @@
     </div>
   </div>
 </body>
-
 </html>

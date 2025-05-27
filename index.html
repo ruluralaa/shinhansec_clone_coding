@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>베스트 랭킹 펀드</title>
-  <link rel="stylesheet" href="fund_bar_style.css" />
+  <title>신한투자증권</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -63,112 +63,11 @@
     <!-- 왼쪽 본문 영역 -->
     <section class="main-content">
       <!-- 콘텐츠 자리 -->
-      <div class="fund-container">
-        <h1 class="fund-main-title">베스트 랭킹 펀드</h1>
-
-        <div class="fund-ranking-header">
-          <div class="fund-title-section">
-            <h2 class="fund-best-title">Best Ranking</h2>
-            <h3 class="fund-sub-title">수익률</h3>
-            <p class="fund-description">수익률 기간을 선택해주세요.</p>
-            <div class="fund-period-selector">
-              <button class="fund-period-btn">1개월</button>
-              <button class="fund-period-btn active">3개월</button>
-              <button class="fund-period-btn">6개월</button>
-              <button class="fund-period-btn">1년</button>
-            </div>
-          </div>
-          <div class="fund-menu-detail">
-            <div class="fund-menu-icons">
-              <div class="fund-menu-item active">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 9L12 3L21 9V21H3V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M7 21V12H17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>수익률</span>
-              </div>
-              <div class="fund-menu-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
-                  <path d="M12 7V17M9 10L12 7L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>판매액</span>
-              </div>
-              <div class="fund-menu-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19.4 15C19.1277 15.8031 19.0366 16.6511 19.134 17.4868C19.2313 18.3225 19.5147 19.1272 19.962 19.837C18.6885 20.6147 17.2405 21.0641 15.754 21.1477C14.2675 21.2313 12.7805 20.9461 11.4224 20.3188C10.0643 19.6914 8.87678 18.7413 7.96501 17.5553C7.05324 16.3693 6.44124 14.9876 6.18271 13.5307C5.92418 12.0738 6.02716 10.5766 6.48233 9.16796C6.93751 7.75929 7.73182 6.48633 8.79414 5.45747C9.85645 4.42861 11.1504 3.67335 12.5667 3.25656C13.983 2.83976 15.4777 2.77592 16.923 3.07085C18.3684 3.36577 19.7214 4.01074 20.8747 4.95152C22.028 5.8923 22.9467 7.10145 23.5557 8.47605" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>설정액</span>
-              </div>
-              <div class="fund-menu-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>연령별</span>
-              </div>
-              <div class="fund-menu-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 3V7M12 21V17M3 12H7M21 12H17M18.364 18.364L15.536 15.536M18.364 5.636L15.536 8.464M5.636 18.364L8.464 15.536M5.636 5.636L8.464 8.464" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>보유펀드</span>
-              </div>
-              <div class="fund-menu-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9 7H7V17H9V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M17 7H15V17H17V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>운용사별</span>
-              </div>
-            </div>
-            <div class="fund-ranking-container">
-              <div class="fund-ranking-item">
-                <div class="fund-rank">1</div>
-                <h4 class="fund-name">iM에셋월드골드증권자[주식재간접](H)(Ce)</h4>
-                <div class="fund-yield">
-                  <span class="fund-yield-label">수익률</span>
-                  <span class="fund-yield-value">19.28%</span>
-                </div>
-                <div class="fund-tags">
-                  <span class="fund-tag">대안투자</span>
-                  <span class="fund-tag">매우높은위험</span>
-                </div>
-                <button class="fund-detail-btn">상세보기</button>
-              </div>
-
-              <div class="fund-ranking-item">
-                <div class="fund-rank">2</div>
-                <h4 class="fund-name">신한 골드증권1호[주식](C-e)</h4>
-                <div class="fund-yield">
-                  <span class="fund-yield-label">수익률</span>
-                  <span class="fund-yield-value">14.91%</span>
-                </div>
-                <div class="fund-tags">
-                  <span class="fund-tag">대안투자</span>
-                  <span class="fund-tag">높은위험</span>
-                </div>
-                <button class="fund-detail-btn">상세보기</button>
-              </div>
-
-              <div class="fund-ranking-item">
-                <div class="fund-rank">3</div>
-                <h4 class="fund-name">신한글로벌탄소중립H[주식](C-e)</h4>
-                <div class="fund-yield">
-                  <span class="fund-yield-label">수익률</span>
-                  <span class="fund-yield-value">12.39%</span>
-                </div>
-                <div class="fund-tags">
-                  <span class="fund-tag">해외주식</span>
-                  <span class="fund-tag">높은위험</span>
-                </div>
-                <button class="fund-detail-btn">상세보기</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="main-hero">Main Content Area</div>
+      <div class="guide-section">GUIDE 영역</div>
+      <div class="analysis-section">기업/산업분석</div>
+      <div class="asset-section">글로벌 자산배분</div>
+      <div class="portfolio-section">오늘의 포트폴리오</div>
     </section>
 
     <!-- 오른쪽 사이드바 -->
