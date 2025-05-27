@@ -1024,43 +1024,56 @@ header {
   user-select: none;
 }
 
+
+
+/* 여기서부터 gnb 메뉴 스타일 */
+
 .gnb-sub-menu {
   background: #f5f7fa;
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 1px solid #e5e8ef;
   width: 64.3%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.25rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
-.gnb-sub-menu-inner {
+
+.gnb-sub-left {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  justify-content: space-between;
+  gap: 1rem;
 }
+
 .gnb-home-icon {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin-right: 8px;
-  vertical-align: middle;
 }
+
 .gnb-links {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
+
 .gnb-links a {
   color: #222;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s;
 }
+
 .gnb-links a:hover {
   color: #0046FF;
+}
+
+.gnb-icon-list {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
