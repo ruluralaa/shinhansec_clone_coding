@@ -1038,47 +1038,42 @@ header {
   width: 64.3%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.25rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
-.gnb-sub-menu-inner {
+
+.gnb-sub-left {
   display: flex;
-  gap: 0;
   align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.gnb-sub-menu-inner * {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-.gnb-home-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-right: 8px;
-  vertical-align: middle;
+  gap: 1rem;
 }
 
-.gnb-icon-list {
-  width: 80px;
-  height: 80px;
+.gnb-home-icon {
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   margin-right: 8px;
-  vertical-align: middle;
 }
+
 .gnb-links {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
+
 .gnb-links a {
   color: #222;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s;
 }
+
 .gnb-links a:hover {
   color: #0046FF;
 }
 
+.gnb-icon-list {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
