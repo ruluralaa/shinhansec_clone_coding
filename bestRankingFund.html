@@ -6,7 +6,7 @@
   <title>신한투자증권 | 베스트 랭킹 펀드</title>
   <link rel="stylesheet" href="style_brf.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-  </style>
+
 </head>
 <body>
   <!-- 상단 네비게이션 -->
@@ -68,34 +68,18 @@
         </div>
         <div class="fund-top-underline"></div>
       </div>
-      <script>
-        // 탭 클릭 활성화
-        document.addEventListener('DOMContentLoaded', function() {
-          const tabs = document.querySelectorAll('.fund-tab');
-          tabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-              tabs.forEach(t => t.classList.remove('active'));
-              this.classList.add('active');
-            });
-          });
-          // 버튼 클릭시 효과(예시)
-          document.getElementById('detail-btn').onclick = function() {
-            alert('자세히보기 클릭!');
-          };
-          document.getElementById('cardview-btn').onclick = function() {
-            alert('카드뷰보기 클릭!');
-          };
-        });
-      </script>
+      <script src="bestRankingFund.js"></script>
       <div class="fund-util-bar">
         <div class="fund-util-left">
-          <button class="util-btn buy-btn"><span class="icon-cart"></span> 일괄매수</button>
-          <button class="util-btn compare-btn2"><span class="icon-compare"></span> 비교하기</button>
+          <button class="util-btn buy-btn btnIco icoTotal">일괄매수</button>
+          <button class="util-btn compare-btn2 btnIco icoCompare">비교하기</button>
         </div>
         <div class="fund-util-right">
-          <label class="util-checkbox"><input type="checkbox" checked> <span>대표펀드 보기</span></label>
-          <label class="util-checkbox"><input type="checkbox" checked> <span>판매중지 제외</span></label>
-          <span class="util-date"><b>2025.05.23</b> 기준</span>
+          <label class="util-checkbox"><input type="checkbox" checked><span>대표펀드 보기</span></label>
+          <label class="util-checkbox"><input type="checkbox" checked><span>판매중지 제외</span></label>
+          <span class="util-divider"></span>
+          <span class="util-date"><b>2025.05.26</b> 기준</span>
+          <span class="util-divider"></span>
           <span class="util-count">총 <b>20</b>건</span>
         </div>
       </div>
@@ -663,5 +647,13 @@
       <div class="floating-tail-exact"></div>
     </div>
   </div>
-</body>
+
+  <div id="loading-spinner" class="loading-spinner" style="display: none;">
+    <div class="loading-wrapper">
+      <img id="loading-img" class="loading-img" src="https://shinhansec.com/siw/common/images/common/loading.gif" alt="로딩중1">
+      <img id="loading-overlay" class="loading-overlay" src="https://shinhansec.com/siw/common/images/common/loading_line.gif" alt="로딩중2">
+    </div>
+  </div>
+  
+  </body>
 </html>
