@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>신한투자증권 | 베스트 랭킹 펀드</title>
   <link rel="stylesheet" href="style_brf.css" />
+  <link rel="stylesheet" href="fund_bar_style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -48,7 +49,94 @@
       </div>
     </div>
   </header>
+  <!-- 순영파트 시작 -->
+  <div class="container">
+    <h1 class="main-title-fund">베스트 랭킹 펀드</h1>
 
+    <div class="ranking-header">
+      <div class="title-section">
+        <p class="best-title">Best Ranking</p>
+        <p class="sub-title">수익률</p>
+        <p class="description">수익률 기간을 선택해주세요.</p>
+        <div class="period-selector">
+          <button class="period-btn active">1개월</button>
+          <button class="period-btn">3개월</button>
+          <button class="period-btn">6개월</button>
+          <button class="period-btn">1년</button>
+        </div>
+      </div>
+      <div class="menu-detail">
+        <div class="menu-icons">
+          <div class="menu-item active">
+            <button class="menu-icons-detail earn-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>수익률</span>
+          </div>
+          <div class="menu-item">
+            <button class="menu-icons-detail sale-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>판매액</span>
+          </div>
+          <div class="menu-item">
+            <button class="menu-icons-detail setting-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>설정액</span>
+          </div>
+          <div class="menu-item">
+            <button class="menu-icons-detail age-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>연령별</span>
+          </div>
+          <div class="menu-item">
+            <button class="menu-icons-detail fund-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>보유펀드</span>
+          </div>
+          <div class="menu-item">
+            <button class="menu-icons-detail compony-icon" onclick="this.classList.toggle('selected')"></button>
+            <span>운용사별</span>
+          </div>
+        </div>
+        <div class="ranking-container">
+          <div class="ranking-item">
+            <div class="rank">1</div>
+            <h4 class="fund-name">iM에셋월드골드증권자[주식재간접](H)(Ce)</h4>
+            <div class="yield-label">수익률</div>
+            <div class="yield-value">19.28<span>%</span></div>
+            <div class="tags">
+              <span class="tag">대안투자</span>
+              <span class="tag">매우높은위험</span>
+            </div>
+            <button class="detail-btn">상세보기</button>
+          </div>
+
+          <div class="ranking-item">
+            
+            <div class="rank">2</div>
+            <h4 class="fund-name">신한 골드증권1호[주식](C-e)</h4>
+
+            <span class="yield-label">수익률</span>
+            <div class="yield-value">14.91<span>%</span></div>
+            <div class="tags">
+              <span class="tag">대안투자</span>
+              <span class="tag">높은위험</span>
+            </div>
+            <button class="detail-btn">상세보기</button>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank">3</div>
+            <h4 class="fund-name">신한글로벌탄소중립H[주식](C-e)</h4>
+            <span class="yield-label">수익률</span>
+            <span class="yield-value">12.39<span>%</span></span>
+            <div class="tags">
+              <span class="tag">해외주식</span>
+              <span class="tag">높은위험</span>
+            </div>
+            <button class="detail-btn">상세보기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- 순영파트 끝끝 -->
   <!-- 메인 콘텐츠 -->
   <main class="main-content">
     <div class="container">
