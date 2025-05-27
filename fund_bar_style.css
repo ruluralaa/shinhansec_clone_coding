@@ -1,0 +1,356 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 메인 타이틀 */
+.main-title-fund {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* 랭킹 헤더 섹션 */
+.ranking-header {
+    display: flex;
+    justify-content: center;
+}
+
+.title-section {
+    margin-right: 16px;
+}
+
+.best-title {
+    color: #1598dc;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: Tahoma;
+    letter-spacing: -.025em;
+    line-height: .9;
+}
+
+.sub-title {
+    font-size: 66px;
+    margin-bottom: 20px;
+    letter-spacing: -.07em;
+    line-height: 1;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 35px;
+
+}
+
+/* 메뉴 디테일 */
+.menu-detail {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+/* 메뉴 아이콘 */
+
+.menu-icons {
+    display: flex;
+    /* justify-content: space-between; */
+    border-bottom: 2px solid #eee;
+}
+
+/* <button class="icon icon-chart" onclick="this.classList.toggle('selected')"></button> */
+/* 공통 */
+.menu-icons button{
+    border: none;
+}
+.menu-icons-detail {
+    display: inline-block;
+    width: 64px;    /* 아이콘 가로 */
+    height: 64px;   /* 아이콘 세로(한 개) */
+    background-image: url('./assets/bg_themeFundNavi.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+    margin: 0 30px
+  }
+  
+  /* 기본(검정)는 y-offset: 0 */
+  .earn-icon { background-position: 0 0; }
+  .sale-icon  { background-position: -64px 0; }
+  .setting-icon { background-position: -128px 0; }
+  .age-icon { background-position: -192px 0; }
+  .fund-icon { background-position: -256px 0; }
+  .compony-icon { background-position: -320px 0; }
+
+  /* … 나머지 아이콘들 … */
+  
+  /* 선택되었을 때 파랑(이미지 아래 줄로 이동) */
+  .earn-icon.selected { background-position: 0 -64px; }
+  .sale-icon.selected  { background-position: -64px -64px; }
+  .setting-icon.selected { background-position: -128px -64px; }
+  .age-icon.selected { background-position: -192px -64px; }
+  .fund-icon.selected { background-position: -256px -64px; }
+  .compony-icon.selected { background-position: -320px -64px; }
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    border-top: 4px solid #152475;
+}
+
+.menu-item.active{
+    border-top: 4px solid #1598dc;
+    font: #1598dc
+}
+
+.menu-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.menu-item span {
+    font-size: 17px;
+    color: black;
+}
+
+.menu-item.active span{
+    color: #1598dc;
+}
+
+.menu-item.active button{
+    background-position-y: -64px;
+}
+
+
+.menu-item.active img {
+    filter: invert(36%) sepia(74%) saturate(4422%) hue-rotate(192deg) brightness(93%) contrast(97%);
+}
+
+/* .menu-item:hover img {
+    filter: invert(23%) sepia(90%) saturate(6977%) hue-rotate(225deg) brightness(97%) contrast(108%);
+} */
+
+/* 기간 선택 버튼 */
+
+.period-selector {
+    width: 226px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 30px;
+}
+
+/* 버튼 기본 스타일 */
+.period-btn {
+    width: 113px;
+    height: 48px;                /* 사진 기준 높이 */
+    /* line-height: 56px;           수직 중앙 정렬 */
+    text-align: center;
+    font-size: 16px;
+    color: white;                /* 기본 흰색 텍스트 */
+    background-color: #5e7387;  /* 기본 회색 배경 */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding-top: 1px;
+    line-height: 47px;
+}
+
+/* 활성화된 버튼 스타일 */
+.period-btn.active, .period-btn:hover {
+    background-color: #1598dc;
+    position: relative;
+    color: white;
+    font-weight: 600;
+}
+
+.period-btn:hover::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+/* 체크 아이콘 추가 (활성화 시) */
+.period-btn.active::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+
+/* 랭킹 컨테이너 */
+.ranking-container {
+    display: flex;
+    background: url(./assets/bg_visual-return.jpg) no-repeat 50% 50%;
+    width: 738px;
+
+}
+
+.ranking-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 380px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-left: 2px dotted #cfdce3;
+}
+
+.rank {
+    font-size: 38px;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.fund-name {
+    font-size: 21px;
+    margin-bottom: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.25;
+    /* height: 44px; */
+    overflow: hidden;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+}
+
+.yield {
+    /* margin: 15px 0; */
+}
+
+.yield-label {
+    font-size: 13px;
+    padding-top: 19px; 
+    border-top: 2px solid #cfdce3;
+
+}
+
+.yield-value {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.yield-value span{
+    font-size: 17px;
+    margin-left: 4px;
+    margin-right: 7px;
+}
+.tags {
+    display: flex;           /* 가로로 나열 */
+  }
+  
+  .tag {
+    background: rgba(255, 255, 255, 0.7); /* 반투명 흰색 배경 */
+    border-radius: 50%;      /* 완전 둥근 원 */
+    width: 55px;
+    height: 55px;
+    margin: 0 4px;
+    display: flex;           /* 내용 중앙 정렬을 위한 flex */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    font-size: 13px;         /* 글자 크기 */
+    color: #333;             /* 글자 색상 */
+    font-weight: normal;
+    line-height: 1.25;
+    vertical-align: middle;
+    text-align: center;      /* 혹시 줄 바꿈시 대비 */
+    user-select: none;       /* 텍스트 선택 방지 (선택사항) */
+  }
+
+
+
+
+
+
+
+.detail-btn {
+    background-color: transparent;
+    cursor: pointer;
+    /* display: inline-block; */
+    width: 150px;
+    height: 32px;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-decoration: none; */
+    border: 1px solid #fff;
+    border-color: rgba(255, 255, 255, .8);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detail-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+} 
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    /* .ranking-container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+}
+
+@media (max-width: 768px) {
+    /* .ranking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    } */
+}
+
+@media (max-width: 480px) {
+    /* .container {
+        padding: 10px;
+    }
+
+    .menu-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .period-selector {
+        flex-wrap: wrap;
+    }
+
+    .period-btn {
+        flex: 1;
+        min-width: 45%;
+    } */
+} 

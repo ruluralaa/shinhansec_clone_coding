@@ -6,10 +6,8 @@
   <title>신한투자증권</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="top-wave-bg"></div>
 
   <!-- 상단 네비게이션 바 -->
   <header>
@@ -43,7 +41,7 @@
           <a href="#">투자정보</a>
           <a href="#">마이데이터</a>
           <a href="#">고객센터</a>
-      </nav>
+        </nav>
         <div class="nav-buttons">
           <button class="icon-btn">
             <img src="./assets/icons/user.png" alt="로그인" width="20" height="20">
@@ -65,305 +63,21 @@
     <!-- 왼쪽 본문 영역 -->
     <section class="main-content">
       <!-- 콘텐츠 자리 -->
-  
-
-      <!-- 펀드상세 제목 추가 -->
-      <h2 class="fund-detail-title">펀드상세</h2>
-
-      <!-- 펀드 상세 본문 추가 -->
-      <section class="fund-detail-main">
-        <!-- 상단 버튼/탭 영역 -->
-        <div class="fund-detail-header">
-
-
-        </div>
-
-        <!-- 펀드 상세 상단 요약 정보 -->
-        <section class="fund-summary">
-          <div class="fund-tags">
-            <span class="fund-tag">해외주식전용펀드</span>
-            <span class="fund-tag">매우높은위험</span>
-            <span class="fund-tag">환헤지</span>
-            <span class="fund-tag">분산투자</span>
-            <span class="fund-tag">적립식</span>
-            <span class="fund-tag">온라인전용</span>
-          </div>
-          <h2 class="fund-title">
-            iM에셋월드골드증권자[주식재간접](H)(Ce)
-            <span class="fund-class">(클래스 C-e)</span>
-            <span class="fund-code">2095006</span>
-          </h2>
-          <div class="fund-summary-grid">
-            <div class="fund-summary-left">
-              <div class="fund-yield-label">수익률(1개월)</div>
-              <div class="fund-yield-value">+0.66%</div>
-              <div class="fund-yield-tabs">
-                <span class="active">1개월</span>
-                <span>3개월</span>
-              </div>
-              <div class="fund-yield-graph"><canvas id="fundChart"></canvas></div>
-            </div>
-            <div class="fund-base-info">
-              <div class="fund-base-item">
-                <span class="base-label">기준가</span>
-                <span class="base-value">744.6</span>
-              </div>
-              <div class="fund-base-item">
-                <span class="base-label">변동폭</span>
-                <span class="base-value">+3.26</span>
-              </div>
-              <div class="fund-base-item">
-                <span class="base-label">섹터</span>
-                <span class="base-value">해외주식</span>
-              </div>
-            </div>
-            <aside class="fund-summary-right">
-              <div class="fund-rating">
-                <span class="star filled">★</span>
-                <span class="star filled">★</span>
-                <span class="star filled">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="rating-score">3.0</span>
-              </div>
-              <div class="fund-info-list">
-                <div class="info-item">
-                  <span class="info-label">펀드총규모</span>
-                  <span class="info-value">453억</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">클래스규모</span>
-                  <span class="info-value">69억</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">설정일</span>
-                  <span class="info-value">2008.09.25</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">보수</span>
-                  <span class="info-value">연 0.66%</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">환매수수료</span>
-                  <span class="info-value">없음</span>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <!-- [2] 펀드 정보 탭 영역 -->
-        <div class="fund-tabs">
-          <input type="radio" id="tab1" name="fundtab" checked>
-          <label for="tab1">기본정보</label>
-          <input type="radio" id="tab2" name="fundtab">
-          <label for="tab2">수익률</label>
-          <input type="radio" id="tab3" name="fundtab">
-          <label for="tab3">운용전략</label>
-          <div class="tab-content tab1-content">
-            <div class="info-section">
-              <img class="info-icon" src="./assets/icons/risk.png" alt="비중확대 아이콘">
-              <div class="info-text">
-                <h4>펀드 투자 매력도</h4>
-                <p>글로벌 중앙은행 완화적 통화정책이 지속되며 5월 수 달러대 금리가 '12년 10월 이후 최고치 기록 후 연초에 가장 큰 폭으로 자산을 늘리는 현재 ECB, BOJ 등 선진국의 자산 보유비와 해외 중앙 은행 확대에 따라 금리가 점차 상승 중. 1,770달러에서 하락하였으나 '12년 10월 이후 최고치 및 유지.</p>
-                <p>설정이래 신규자산 시그널과 귀속 수익률이 꾸준히 상승 중이며, 글로벌 분산투자와 함께 금값 상승에 따른 추가 수요 요인으로 작용. 주요국의 금리 인상, 환율, 파운드, 원화 등 외부 충격에도 불구하고 이미 시장 최고치를 경신 중.</p>
-              </div>
-            </div>
-            <div class="info-section">
-              <img class="info-icon" src="./assets/icons/document.png" alt="서류 아이콘">
-              <div class="info-text">
-                <h4>상품특징</h4>
-                <p>전 세계 금광업 및 귀금속 관련 기업의 주식에 투자하는 펀드입니다.</p>
-                <p>금가격에 대한 민감도와 변동성을 줄이도록, 세계 주요 트렌드(원자재/금 등)와 풍부한 글로벌 기업에 선택 투자하는 펀드입니다.</p>
-              </div>
-            </div>
-            <div class="info-section">
-              <img class="info-icon" src="./assets/icons/strategy.png" alt="운용전략 아이콘">
-              <div class="info-text">
-                <h4>운용전략</h4>
-                <p>금광업종 외 비지니스는 해당 기업들이 주력으로 삼는 기업의 주식에 투자하며, 일부 귀속 수익 다이어미드로 분산하는 전략을 사용합니다.</p>
-                <p>환헤지 전략과 글로벌 분산투자를 통해 시장 변동성에 대응하며, 주요 성장 산업과 글로벌 트렌드에 맞춘 포트폴리오를 운용합니다.</p>
-              </div>
-            </div>
-          </div>
-          <div class="tab-content tab2-content">
-            <p>여기에 펀드의 수익률 정보가 들어갑니다.</p>
-          </div>
-          <div class="tab-content tab3-content">
-            <p>여기에 펀드의 운용전략 정보가 들어갑니다.</p>
-          </div>
-        </div>
-
-        <!-- [3] 데이터 표 -->
-        <div class="fund-table-section">
-          <table class="fund-data-table">
-            <tbody>
-              <tr>
-                <th>펀드기구/유형</th>
-                <td>
-                  증권/재간접 <span class="tag">매우높은위험</span>
-                </td>
-                <th>펀드규모</th>
-                <td>69억원</td>
-              </tr>
-              <tr>
-                <th>설정일</th>
-                <td>2008.09.25</td>
-                <th>당사판매일</th>
-                <td>2017.01.09</td>
-              </tr>
-              <tr>
-                <th>집합투자업자</th>
-                <td><a href="#">iM에셋자산운용 (구 하이)</a></td>
-                <th>신탁업자</th>
-                <td>홍콩상하이은행(HSBC)</td>
-              </tr>
-              <tr>
-                <th>구분</th>
-                <td>공모</td>
-                <th>환매방식</th>
-                <td>개방형</td>
-              </tr>
-              <tr>
-                <th>가입대상</th>
-                <td>
-                  <label><input type="checkbox" checked disabled> 개인</label>
-                  <label><input type="checkbox" checked disabled> 법인</label>
-                  <label><input type="checkbox" checked disabled> 외국인</label>
-                </td>
-                <th>판매채널</th>
-                <td>
-                  <label><input type="checkbox" checked disabled> 온라인</label>
-                  <label><input type="checkbox" disabled> 지점</label>
-                  <label><input type="checkbox" disabled> 전화</label>
-                </td>
-              </tr>
-              <tr>
-                <th>가입유형</th>
-                <td colspan="3">
-                  <label><input type="checkbox" checked disabled> 임의식</label>
-                  <label><input type="checkbox" checked disabled> 거치식</label>
-                  <label><input type="checkbox" checked disabled> 정액적립식</label>
-                  <label><input type="checkbox" checked disabled> 자유적립식</label>
-                </td>
-              </tr>
-              <tr>
-                <th>과세종류</th>
-                <td colspan="3">
-                  <label><input type="checkbox" checked disabled> 일반과세</label>
-                  <label><input type="checkbox" disabled> 세금우대</label>
-                  <label><input type="checkbox" disabled> 비과세</label>
-                </td>
-              </tr>
-              <tr>
-                <th>최소가입금액</th>
-                <td>제한없음</td>
-                <th>적립식 최소투자기간</th>
-                <td>12개월 (1년)</td>
-              </tr>
-              <tr>
-                <th>투자지역</th>
-                <td>글로벌</td>
-                <th>통화단위</th>
-                <td>KRW (대한민국원)</td>
-              </tr>
-              <tr>
-                <th>투자국가</th>
-                <td>해외주식비과세</td>
-                <th></th>
-                <td>해외주식투자전용펀드</td>
-              </tr>
-              <tr>
-                <th>환헤지</th>
-                <td colspan="3">환헤지 실시, 목표 환헤지 비율 100%</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="fund-table-date">2025.05.23 기준</div>
-        </div>
-
-        <!-- 3행 4열 통계 섹션 -->
-        <section class="fund-stats-section">
-          <div class="fund-stats-grid">
-            <!-- 1행 -->
-            <div class="fund-stats-title-cell">
-              <div class="stats-icon-bg"><img src="./assets/icons/user.png" alt="동일유형 아이콘"></div>
-              <div class="stats-title">동일유형</div>
-              <div class="stats-desc">수익률 BEST 펀드</div>
-            </div>
-            <div class="fund-stats-cell">
-              신한 골드증권자[주식] (C-e)<br><span class="stats-value">14.91%</span>
-            </div>
-            <div class="fund-stats-cell">
-              키움골드플러스펀드 (C-e)<br><span class="stats-value">1.14%</span>
-            </div>
-            <div class="fund-stats-cell">
-              삼성골드펀드 (C-e)<br><span class="stats-value">-1.69%</span>
-            </div>
-            <!-- 2행 -->
-            <div class="fund-stats-title-cell">
-              <div class="stats-icon-bg"><img src="./assets/icons/user.png" alt="연령별 아이콘"></div>
-              <div class="stats-title">이 펀드를 가장 많이<br>보유한 연령대</div>
-              <div class="stats-desc">연령별 비중</div>
-            </div>
-            <div class="fund-stats-cell">
-              50대<br><span class="stats-value">31%</span>
-            </div>
-            <div class="fund-stats-cell">
-              30대<br><span class="stats-value">27%</span>
-            </div>
-            <div class="fund-stats-cell">
-              40대<br><span class="stats-value">20%</span>
-            </div>
-            <!-- 3행 -->
-            <div class="fund-stats-title-cell">
-              <div class="stats-icon-bg"><img src="./assets/icons/user.png" alt="함께매수 아이콘"></div>
-              <div class="stats-title">다른 고객이<br>함께 매수한 펀드</div>
-              <div class="stats-desc">동시 매수 TOP3</div>
-            </div>
-            <div class="fund-stats-cell">
-              신한 골드증권자[주식] (C-e)<br><span class="stats-value">14.91%</span>
-            </div>
-            <div class="fund-stats-cell">
-              신한 글로벌자산배분펀드<br><span class="stats-value">12.39%</span>
-            </div>
-            <div class="fund-stats-cell">
-              DB하이텍인덱스펀드<br><span class="stats-value">11.94%</span>
-            </div>
-          </div>
-        </section>
-      </section>
-      <!-- 펀드 상세 본문 끝 -->
+      <div class="main-hero">Main Content Area</div>
+      <div class="guide-section">GUIDE 영역</div>
+      <div class="analysis-section">기업/산업분석</div>
+      <div class="asset-section">글로벌 자산배분</div>
+      <div class="portfolio-section">오늘의 포트폴리오</div>
     </section>
 
     <!-- 오른쪽 사이드바 -->
-
+    <aside class="right-sidebar">
+      <div class="investment-tip">
+        오늘의 투자전략
+      </div>
+    </aside>
 
   </main>
-
-  <!-- 푸터 위 신한투자증권 안내 박스 -->
-  <div class="shinhan-info-box">
-    <div class="shinhan-info-title">
-      <span class="shinhan-info-icon">!</span>
-      <span class="shinhan-info-title-text">확인하세요!</span>
-    </div>
-    <ul class="shinhan-info-list">
-      <li>투자는 금융투자상품(집합투자증권)에 대하여 금융회사로부터 충분한 설명을 받을 권리가 있으며, 투자전 (간이)투자설명서 및 집합투자규약을 반드시 읽어보시기 바랍니다.</li>
-      <li class="red">이 금융투자상품(집합투자증권)은 예금자보호법에 따라 보호되지 않습니다.</li>
-      <li class="red">금융투자상품(집합투자증권)은 자산가치 변동, 환율변동, 신용등급 하락 등에 따라 투자원금의 손실(0~100%)이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
-      <li>증권거래비용, 기타비용이 추가로 발생할 수 있습니다.</li>
-      <li>과거의 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.</li>
-      <li>종류형 펀드의 경우, 종류별 집합투자증권에 부과되는 보수·수수료 차이로 운용실적이 달라질 수 있습니다.</li>
-      <li>[MMF] MMF는 시가와 장부가의 차이가 ±0.5%를 초과하거나 초과할 우려가 있는 경우 시가로 전환됩니다.</li>
-      <li>[하이일드채권] 하이일드채권은 투자원금의 손실이 크게 발생할 수 있습니다.</li>
-      <li>[레버리지형] 레버리지형 펀드는 투자원금의 손실이 크게 확대될 수 있습니다.</li>
-      <li>[레버리지형] 레버리지펀드(2배, 인버스, 인버스2배)의 기간수익률을 추종하는 기초자산(지수)의 일간 수익률과 차이가 발생할 수 있습니다.</li>
-      <li>[세제혜택펀드] 과세기준 및 과세방법은 향후 세법개정 등에 따라 변동될 수 있습니다.</li>
-      <li>[재간접형] 재간접형펀드는 피투자펀드보수 및 증권거래비용 등 추가비용이 발생할 수 있습니다.</li>
-      <li>총보수란 정기적으로 발생하는 운용보수, 판매보수, 신탁업자보수, 사무관리보수의 합계입니다. 해당 보수에는 운용상 발생될 수 있는 증권거래비용, 피펀드운용보수(재간접펀드의 경우 해당), 기타비용 등이 제외되어 있으므로 상세내용은 투자설명서를 참고하시기 바랍니다.</li>
-      <li>판매정보는 영업일 오전 8시 30분에 업데이트 됩니다.</li>
-    </ul>
-  </div>
 
   <!-- 푸터 -->
   <footer class="footer">
@@ -421,26 +135,5 @@
     </div>
   </footer>
 
-  <div class="floating-bar-exact">
-    <div class="floating-bar-inner">
-      <div class="floating-circle-exact">
-        <span class="floating-headset-icon"></span>
-        <div class="floating-title-exact">상담문의</div>
-      </div>
-      <div class="floating-menu-exact">
-        <div class="floating-menu-item-exact">
-          <span class="floating-menu-icon-exact clock"></span>
-          <span class="floating-menu-label">상담시간</span>
-        </div>
-        <div class="floating-menu-item-exact">
-          <span class="floating-menu-icon-exact heart"></span>
-          <span class="floating-menu-label">관심등록</span>
-        </div>
-      </div>
-      <div class="floating-tail-exact"></div>
-    </div>
-  </div>
-
-  <script src="chart.js"></script>
 </body>
 </html>
